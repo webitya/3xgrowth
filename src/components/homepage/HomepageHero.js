@@ -8,7 +8,7 @@ import EnterpriseContactForm from "@/components/forms/EnterpriseContactForm"
 
 export default function HomepageHero() {
   return (
-    <section className="min-h-[100vh] flex items-center justify-center px-4 pt-20 pb-6 relative overflow-hidden">
+    <section className="min-h-[100vh] flex items-center justify-center px-4 pt-24 pb-6 relative overflow-hidden">
       {/* Corporate futuristic background */}
       <div className="absolute inset-0">
         {/* Corporate grid pattern */}
