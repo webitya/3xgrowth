@@ -81,25 +81,7 @@ export default function HomepageProblems() {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Corporate alert header */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex justify-center mb-8"
-        >
-          <div className="flex items-center space-x-4 px-8 py-4 bg-red-900/20 backdrop-blur-xl border border-red-400/30 rounded-xl">
-            <Warning className="text-red-400 text-2xl" />
-            <div className="text-left">
-              <div className="text-red-400 text-sm font-bold tracking-wider">BUSINESS RISK ASSESSMENT</div>
-              <div className="text-slate-400 text-xs">Critical Performance Gaps Identified</div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse" />
-              <span className="text-xs font-semibold text-red-300">URGENT</span>
-            </div>
-          </div>
-        </motion.div>
+     
 
         <NeuralInterface className="mb-16">
           <motion.div
@@ -108,7 +90,7 @@ export default function HomepageProblems() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h2 className="text-5xl md:text-6xl font-black mb-6">
+            <h2 className="text-4xl md:text-4xl font-black mb-6">
               <span
                 className="bg-gradient-to-r from-red-400 via-orange-500 to-yellow-500 bg-clip-text text-transparent"
                 style={{

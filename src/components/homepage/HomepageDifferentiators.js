@@ -102,24 +102,7 @@ export default function HomepageDifferentiators() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Corporate excellence header */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex justify-center mb-8"
-        >
-          <div className="flex items-center space-x-6 px-8 py-4 bg-slate-900/80 backdrop-blur-xl border border-blue-400/30 rounded-xl">
-            <Business className="text-blue-400 text-2xl" />
-            <div className="text-left">
-              <div className="text-blue-400 text-sm font-bold tracking-wider">COMPETITIVE ADVANTAGE ANALYSIS</div>
-              <div className="text-slate-400 text-xs">Enterprise Differentiation Matrix</div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Analytics className="text-emerald-400 text-sm" />
-              <span className="text-xs font-semibold text-emerald-300">VERIFIED</span>
-            </div>
-          </div>
-        </motion.div>
+       
 
         <NeuralInterface className="mb-16">
           <motion.div
@@ -128,7 +111,7 @@ export default function HomepageDifferentiators() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h2 className="text-5xl md:text-6xl font-black mb-6">
+            <h2 className="text-4xl md:text-4xl font-black mb-6">
               <span className="text-slate-200">What Sets Us</span>
               <span
                 className="bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 bg-clip-text text-transparent ml-3"
