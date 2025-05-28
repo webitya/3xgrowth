@@ -159,7 +159,7 @@ export default function Navbar() {
             </div>
 
             {/* Business metrics display */}
-            <div className="hidden lg:flex items-center space-x-4 ml-6">
+            {/* <div className="hidden lg:flex items-center space-x-4 ml-6">
               <div className="flex items-center space-x-2 px-3 py-1 bg-slate-800/50 rounded-lg border border-blue-400/20">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                 <span className="text-xs text-slate-300">ACTIVE</span>
@@ -168,7 +168,7 @@ export default function Navbar() {
                 <Analytics className="text-purple-400 text-sm" />
                 <span className="text-xs text-slate-300">100+ CLIENTS</span>
               </div>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -185,7 +185,7 @@ export default function Navbar() {
                   href={item.href}
                   className="flex items-center space-x-2 px-4 py-3 text-slate-300 hover:text-blue-300 transition-all duration-300 font-medium relative z-10 rounded-lg"
                 >
-                  {item.icon}
+                  {/* {item.icon} */}
                   <span className="text-sm">{item.name}</span>
                 </Link>
 
