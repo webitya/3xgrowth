@@ -36,7 +36,7 @@ export default function ContactInfo() {
       <div className="glass-effect p-8 rounded-lg">
         <h2 className="text-3xl font-bold mb-6 gradient-text">Why Choose 3xGrowth?</h2>
         <p className="text-gray-300 mb-6 leading-relaxed">
-          We're not just another marketing agency. We're your growth partners, committed to delivering measurable
+          We re not just another marketing agency. We re your growth partners, committed to delivering measurable
           results that impact your bottom line.
         </p>
 

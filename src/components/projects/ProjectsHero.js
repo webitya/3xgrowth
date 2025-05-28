@@ -12,7 +12,7 @@ export default function ProjectsHero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto">
-            Discover how we've helped 100+ companies transform their B2B marketing and achieve remarkable growth
+            Discover how we ve helped 100+ companies transform their B2B marketing and achieve remarkable growth
             results.
           </p>
         </motion.div>

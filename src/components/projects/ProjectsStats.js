@@ -43,7 +43,7 @@ export default function ProjectsStats() {
             <span className="gradient-text">Results That Speak</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Numbers don't lie. Here's the impact we've made across our client portfolio.
+            Numbers don t lie. Here s the impact we have made across our client portfolio.
           </p>
         </motion.div>
 

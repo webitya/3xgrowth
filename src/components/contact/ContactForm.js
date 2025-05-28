@@ -159,7 +159,7 @@ export default function ContactForm() {
         </button>
 
         {submitStatus === "success" && (
-          <p className="text-green-400 text-center">Message sent successfully! We'll get back to you soon.</p>
+          <p className="text-green-400 text-center">Message sent successfully! We will get back to you soon.</p>
         )}
         {submitStatus === "error" && (
           <p className="text-red-400 text-center">Error sending message. Please try again.</p>

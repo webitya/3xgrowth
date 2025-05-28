@@ -12,7 +12,7 @@ export default function ContactHero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Ready to 3x your growth? Let's discuss how we can transform your B2B marketing and sales operations.
+            Ready to 3x your growth? Let s discuss how we can transform your B2B marketing and sales operations.
           </p>
         </motion.div>
 

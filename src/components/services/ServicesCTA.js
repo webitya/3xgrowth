@@ -13,7 +13,7 @@ export default function ServicesCTA() {
             <span className="gradient-text">Ready to Transform Your B2B Marketing?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let's discuss which services are right for your business and create a customized growth strategy.
+            Let s discuss which services are right for your business and create a customized growth strategy.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

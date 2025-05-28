@@ -35,7 +35,7 @@ export default function ProjectsCTA() {
           <div className="glass-effect p-6 rounded-lg inline-block">
             <RocketLaunch className="text-blue-400 text-3xl mb-2" />
             <p className="text-lg font-semibold text-white">Ready to 3x Your Growth?</p>
-            <p className="text-gray-400">Let's discuss your specific challenges and goals</p>
+            <p className="text-gray-400">Let s discuss your specific challenges and goals</p>
           </div>
         </motion.div>
       </div>

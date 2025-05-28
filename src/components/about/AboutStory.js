@@ -27,7 +27,7 @@ export default function AboutStory() {
             <School className="text-5xl text-blue-400 mb-6" />
             <h3 className="text-2xl font-bold mb-4 text-white">Sister Company of Sales Syllabus</h3>
             <p className="text-gray-300 leading-relaxed">
-              3xGrowth Consulting is a sister company of Sales Syllabus — India's largest leadership learning platform
+              3xGrowth Consulting is a sister company of Sales Syllabus — India s largest leadership learning platform
               for sales and marketing teams. This connection gives us unique insights into what works in B2B sales and
               marketing.
             </p>
@@ -42,8 +42,8 @@ export default function AboutStory() {
             <Business className="text-5xl text-purple-400 mb-6" />
             <h3 className="text-2xl font-bold mb-4 text-white">8 Years of Excellence</h3>
             <p className="text-gray-300 leading-relaxed">
-              With over 8 years of experience, we've worked with 100+ companies to understand what works—and what
-              doesn't—in B2B sales and marketing. Our deep operational understanding and strong talent network ensure
+              With over 8 years of experience, we ve worked with 100+ companies to understand what works—and what
+              doesn t—in B2B sales and marketing. Our deep operational understanding and strong talent network ensure
               success.
             </p>
           </motion.div>
