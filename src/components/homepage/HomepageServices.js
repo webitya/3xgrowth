@@ -2,6 +2,9 @@
 import { motion } from "framer-motion"
 import { GpsFixed, ConnectWithoutContact, EventNote, Campaign } from "@mui/icons-material"
 import Link from "next/link"
+import HolographicPanel from "@/components/advanced/HolographicPanel"
+import NeuralInterface from "@/components/advanced/NeuralInterface"
+import QuantumButton from "@/components/advanced/QuantumButton"
 
 export default function HomepageServices() {
   const services = [
@@ -15,7 +18,7 @@ export default function HomepageServices() {
       formerly: "Enrich",
     },
     {
-      icon: <ConnectWithoutContact className="text-5xl text-green-400" />,
+      icon: <ConnectWithoutContact className="text-5xl text-emerald-400" />,
       title: "Breakthrough",
       subtitle: "First connection is your first conversion",
       description:
@@ -44,60 +47,170 @@ export default function HomepageServices() {
   ]
 
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Our Services</span>
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Comprehensive B2B marketing solutions designed to accelerate your growth
-          </p>
-        </motion.div>
+    <section className="py-24 px-4 bg-gradient-to-br from-slate-950 via-blue-950/10 to-slate-950 relative overflow-hidden">
+      {/* Service field background */}
+      <div className="absolute inset-0 opacity-5">
+        <div
+          style={{
+            backgroundImage: `
+              radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.4) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(147, 51, 234, 0.4) 0%, transparent 50%),
+              radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.3) 0%, transparent 70%),
+              linear-gradient(45deg, transparent 24%, rgba(59, 130, 246, 0.1) 25%, rgba(59, 130, 246, 0.1) 26%, transparent 27%)
+            `,
+            backgroundSize: "100% 100%, 100% 100%, 100% 100%, 100px 100px",
+          }}
+          className="w-full h-full"
+        />
+      </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <NeuralInterface className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h2 className="text-5xl md:text-6xl font-black mb-6">
+              <span className="text-slate-200">Our</span>
+              <span
+                className="bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 bg-clip-text text-transparent ml-3"
+                style={{
+                  backgroundSize: "200% 200%",
+                  animation: "quantumFlow 4s ease-in-out infinite",
+                }}
+              >
+                Services
+              </span>
+            </h2>
+
+            <p className="text-xl text-slate-400 max-w-4xl mx-auto leading-relaxed">
+              Comprehensive <span className="text-blue-300 font-medium">B2B marketing solutions</span> designed to
+              accelerate your business growth through proven strategies and
+              <span className="text-emerald-300 font-medium"> expert execution</span>.
+            </p>
+          </motion.div>
+        </NeuralInterface>
+
+        {/* Services grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
-            <motion.div
+            <HolographicPanel
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="glass-effect p-8 rounded-lg hover:bg-white/20 transition-all duration-300"
+              title={`SERVICE ${index + 1}`}
+              variant={index % 3 === 0 ? "primary" : index % 3 === 1 ? "secondary" : "accent"}
+              level={5}
+              className="h-full"
             >
-              <div className="mb-6">{service.icon}</div>
-              <h3 className="text-2xl font-bold mb-2 text-white">{service.title}</h3>
-              <p className="text-lg text-blue-300 mb-4">{service.subtitle}</p>
-              <p className="text-gray-300 mb-6 leading-relaxed">{service.description}</p>
+              <div className="space-y-6">
+                {/* Service header */}
+                <div className="flex items-start justify-between">
+                  <div className="flex items-center space-x-3">
+                    <motion.div
+                      className="transform transition-transform duration-300 hover:scale-110"
+                      style={{
+                        filter: "drop-shadow(0 0 15px rgba(59, 130, 246, 0.6))",
+                      }}
+                    >
+                      {service.icon}
+                    </motion.div>
+                  </div>
+                  {service.formerly && (
+                    <div className="text-right">
+                      <div className="text-xs text-slate-500">Formerly</div>
+                      <div className="text-sm font-bold text-slate-400">{service.formerly}</div>
+                    </div>
+                  )}
+                </div>
 
-              <div className="border-t border-gray-700 pt-4">
-                <p className="text-sm text-gray-400 mb-2">
-                  <span className="font-semibold text-green-400">Output:</span> {service.output}
-                </p>
-                {service.formerly && <p className="text-sm text-gray-500">Formerly Known As: {service.formerly}</p>}
+                {/* Service definition */}
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-200 mb-2">{service.title}</h3>
+                  <p className="text-sm text-blue-300 font-medium mb-3">{service.subtitle}</p>
+                  <p className="text-slate-400 leading-relaxed text-sm">{service.description}</p>
+                </div>
+
+                {/* Output */}
+                <div className="pt-4 border-t border-slate-700">
+                  <div className="text-xs text-slate-500 mb-1">Output Delivery:</div>
+                  <div className="text-sm font-medium text-emerald-400">{service.output}</div>
+                </div>
               </div>
-            </motion.div>
+            </HolographicPanel>
           ))}
         </div>
 
+        {/* Action center */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-12"
+          className="text-center"
         >
-          <Link
-            href="/services"
-            className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 neon-glow inline-block"
-          >
-            Explore All Services
-          </Link>
+          <HolographicPanel title="GET STARTED TODAY" variant="primary" level={5} className="max-w-4xl mx-auto">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-200 mb-4">Ready to Transform Your B2B Marketing?</h3>
+                <p className="text-lg text-slate-400 leading-relaxed">
+                  Let's discuss which services are right for your business and create a
+                  <span className="text-blue-300 font-medium"> customized growth strategy</span>.
+                </p>
+              </div>
+
+              {/* Action buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <QuantumButton variant="primary" size="large">
+                  <Link href="/services" className="block">
+                    Explore All Services
+                  </Link>
+                </QuantumButton>
+
+                <QuantumButton variant="secondary" size="large">
+                  <Link href="/contact" className="block">
+                    Get Started Today
+                  </Link>
+                </QuantumButton>
+              </div>
+
+              {/* Metrics */}
+              <div className="grid grid-cols-3 gap-6 pt-8 border-t border-slate-700">
+                {[
+                  { label: "Companies Served", value: "100+" },
+                  { label: "Years Experience", value: "8+" },
+                  { label: "Proven Results", value: "3x Growth" },
+                ].map((metric, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-2xl font-bold text-emerald-400 mb-1">{metric.value}</div>
+                    <div className="text-xs text-slate-500">{metric.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </HolographicPanel>
         </motion.div>
       </div>
+
+      <style jsx>{`
+        @keyframes quantumFlow {
+          0%, 100% {
+            background-position: 0% 50%;
+            filter: hue-rotate(0deg);
+          }
+          25% {
+            background-position: 100% 50%;
+            filter: hue-rotate(90deg);
+          }
+          50% {
+            background-position: 100% 100%;
+            filter: hue-rotate(180deg);
+          }
+          75% {
+            background-position: 0% 100%;
+            filter: hue-rotate(270deg);
+          }
+        }
+      `}</style>
     </section>
   )
 }

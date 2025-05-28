@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
-import { Search, Event } from "@mui/icons-material"
+// import { Search, Event, Influence } from "@mui/icons-material"
+import { Search, Event, Link, Stars } from '@mui/icons-material';
 
 
 export default function ServicesProcess() {
@@ -11,7 +12,7 @@ export default function ServicesProcess() {
       description: "Identify and build your ideal customer database",
     },
     {
-      icon: <Search className="text-4xl text-green-400" />,
+      icon: <Link className="text-4xl text-green-400" />,
       title: "Breakthrough",
       description: "Make first contact with qualified prospects",
     },
@@ -21,7 +22,7 @@ export default function ServicesProcess() {
       description: "Convert contacts into sales appointments",
     },
     {
-      icon: <Search className="text-4xl text-pink-400" />,
+      icon: <Stars className="text-4xl text-pink-400" />,
       title: "Influence",
       description: "Nurture and accelerate decision-making",
     },

@@ -3,12 +3,12 @@ import HomepageProblems from "@/components/homepage/HomepageProblems"
 import HomepageDifferentiators from "@/components/homepage/HomepageDifferentiators"
 import HomepageServices from "@/components/homepage/HomepageServices"
 import HomepageCTA from "@/components/homepage/HomepageCTA"
-import ThreeBackground from "@/components/3d/ThreeBackground"
+import QuantumParticleSystem from "@/components/advanced/QuantumParticleSystem"
 
 export default function HomePage() {
   return (
-    <div className="relative">
-      <ThreeBackground />
+    <div className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+      <QuantumParticleSystem />
       <HomepageHero />
       <HomepageProblems />
       <HomepageDifferentiators />
