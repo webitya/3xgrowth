@@ -148,7 +148,7 @@ export default function EnterpriseContactForm() {
             >
               <CheckCircle className="text-emerald-400 text-xs mt-0.5" />
               <div>
-                <p className="text-emerald-400 text-xs font-medium">Success! We'll be in touch soon.</p>
+                <p className="text-emerald-400 text-xs font-medium">Success! We will be in touch soon.</p>
                 <p className="text-emerald-300 text-xs">Expect a call within 24 hours.</p>
               </div>
             </motion.div>

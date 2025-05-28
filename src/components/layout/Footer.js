@@ -379,13 +379,13 @@ export default function Footer() {
                 <School className="text-purple-400 text-3xl" />
                 <div className="text-left">
                   <h3 className="text-xl font-bold text-slate-200">Sister Company of Sales Syllabus</h3>
-                  <p className="text-sm text-purple-300">India's Largest Leadership Learning Platform</p>
+                  <p className="text-sm text-purple-300">India s Largest Leadership Learning Platform</p>
                 </div>
               </div>
 
               <p className="text-slate-400 leading-relaxed max-w-2xl mx-auto">
                 3xGrowth Consulting is a sister company of{" "}
-                <span className="text-purple-300 font-semibold">Sales Syllabus</span> — India's largest leadership
+                <span className="text-purple-300 font-semibold">Sales Syllabus</span> — India s largest leadership
                 learning platform for sales and marketing teams. This strategic partnership gives us unique insights
                 into what works in B2B sales and marketing.
               </p>
