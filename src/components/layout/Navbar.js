@@ -44,12 +44,12 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-700 ${
-        scrolled ? "bg-slate-950/90 backdrop-blur-xl border-b border-blue-400/20" : "bg-transparent"
+        scrolled ? "bg-white backdrop-blur-xl border-b border-blue-400/20" : "bg-white"
       }`}
       style={{
         boxShadow: scrolled
           ? "0 8px 32px 0 rgba(59, 130, 246, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.05)"
-          : "none",
+          : "0 8px 32px 0 rgba(59, 130, 246, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.05)",
       }}
     >
       {/* Quantum field background */}
@@ -106,18 +106,18 @@ export default function Navbar() {
               {/* Central quantum core */}
               <div className="relative w-12 h-12 flex items-center justify-center">
                 <motion.div
-                  className="absolute inset-0 border-2 border-blue-400/30 rounded-lg"
+                  className="absolute inset-0 border-2 border-blue-400 rounded-lg"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                 />
                 <motion.div
-                  className="absolute inset-1 border border-purple-400/20 rounded-lg"
+                  className="absolute inset-1 border border-purple-400 rounded-lg"
                   animate={{ rotate: -360 }}
                   transition={{ duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                 />
 
                 <TrendingUp
-                  className="text-blue-400 text-2xl relative z-10"
+                  className="text-blue-600 text-2xl relative z-10"
                   style={{
                     filter: "drop-shadow(0 0 10px rgba(59, 130, 246, 0.6))",
                   }}
@@ -147,7 +147,7 @@ export default function Navbar() {
 
             <div className="flex flex-col">
               <span
-                className="text-2xl font-black bg-gradient-to-r from-blue-200 via-slate-100 to-blue-200 bg-clip-text text-transparent"
+                className="text-2xl font-black bg-gradient-to-r from-blue-500 via-slate-500 to-blue-500 bg-clip-text text-transparent"
                 style={{
                   backgroundSize: "200% 200%",
                   animation: "quantumShift 3s ease infinite",
@@ -155,7 +155,7 @@ export default function Navbar() {
               >
                 3xGrowth
               </span>
-              <span className="text-xs text-slate-400 font-light tracking-wider">B2B MARKETING EXCELLENCE</span>
+              <span className="text-xs text-slate-700 font-light tracking-wider">B2B MARKETING EXCELLENCE</span>
             </div>
 
             {/* Business metrics display */}
@@ -183,7 +183,7 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center space-x-2 px-4 py-3 text-slate-300 hover:text-blue-300 transition-all duration-300 font-medium relative z-10 rounded-lg"
+                  className="flex items-center space-x-2 px-4 py-3 text-slate-500 hover:text-blue-300 transition-all duration-300 font-medium relative z-10 rounded-lg"
                 >
                   {/* {item.icon} */}
                   <span className="text-sm">{item.name}</span>

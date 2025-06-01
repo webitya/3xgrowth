@@ -7,7 +7,8 @@ import QuantumParticleSystem from "@/components/advanced/QuantumParticleSystem"
 
 export default function HomePage() {
   return (
-    <div className="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="relative bg-gradient-to-br from-white via-white to-white">
+         
       <QuantumParticleSystem />
       <HomepageHero />
       <HomepageProblems />

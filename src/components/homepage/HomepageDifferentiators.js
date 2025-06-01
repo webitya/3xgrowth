@@ -7,7 +7,7 @@ import NeuralInterface from "@/components/advanced/NeuralInterface"
 export default function HomepageDifferentiators() {
   const differentiators = [
     {
-      icon: <Assignment className="text-5xl text-blue-400" />,
+      icon: <Assignment className="text-5xl text-blue-600" />,
       title: "Output-Driven Accountability",
       subtitle: "Enterprise Performance Ownership",
       description:
@@ -23,7 +23,7 @@ export default function HomepageDifferentiators() {
       badge: "GUARANTEED",
     },
     {
-      icon: <School className="text-5xl text-purple-400" />,
+      icon: <School className="text-5xl text-purple-600" />,
       title: "Culture of Training & Process",
       subtitle: "Continuous Excellence Framework",
       description:
@@ -39,7 +39,7 @@ export default function HomepageDifferentiators() {
       badge: "CERTIFIED",
     },
     {
-      icon: <TrendingUp className="text-5xl text-emerald-400" />,
+      icon: <TrendingUp className="text-5xl text-emerald-600" />,
       title: "ROI-Obsessed Delivery",
       subtitle: "Metrics-Driven Performance Engine",
       description:
@@ -57,7 +57,7 @@ export default function HomepageDifferentiators() {
   ]
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-slate-900 via-blue-950/20 to-slate-900 relative overflow-hidden">
+    <section className="py-0 px-4 bg-gradient-to-br from-white via-purple-50 to-white relative overflow-hidden">
       {/* Corporate excellence grid */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -77,7 +77,7 @@ export default function HomepageDifferentiators() {
       </div>
 
       {/* Corporate data visualization */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 py-1">
         {[...Array(10)].map((_, i) => (
           <motion.div
             key={i}
@@ -100,7 +100,7 @@ export default function HomepageDifferentiators() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10 mb-3 ">
         {/* Corporate excellence header */}
        
 
@@ -111,10 +111,10 @@ export default function HomepageDifferentiators() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h2 className="text-4xl md:text-4xl font-black mb-6">
-              <span className="text-slate-200">What Sets Us</span>
+            <h2 className="text-4xl md:text-4xl font-black mb-2 py-6">
+              <span className="text-slate-500">What Sets Us</span>
               <span
-                className="bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 bg-clip-text text-transparent ml-3"
+                className="bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 bg-clip-text text-transparent ml-3"
                 style={{
                   backgroundSize: "200% 200%",
                   animation: "corporateExcellence 4s ease-in-out infinite",
@@ -124,14 +124,14 @@ export default function HomepageDifferentiators() {
               </span>
             </h2>
 
-            <div className="max-w-4xl mx-auto bg-slate-900/60 backdrop-blur-xl border border-blue-400/20 rounded-2xl p-8">
-              <p className="text-xl text-slate-300 leading-relaxed mb-4">
-                Our <span className="text-blue-300 font-semibold">performance-driven approach</span> and commitment to
+            <div className="max-w-4xl mx-auto bg-white backdrop-blur-xl border border-blue-400/20 rounded-2xl p-8">
+              <p className="text-xl text-slate-800 leading-relaxed mb-4">
+                Our <span className="text-blue-600 font-semibold">performance-driven approach</span> and commitment to
                 enterprise excellence ensures we deliver results that exceed expectations.
               </p>
-              <p className="text-lg text-slate-400 leading-relaxed">
+              <p className="text-lg text-slate-800 leading-relaxed">
                 Through{" "}
-                <span className="text-emerald-300 font-semibold">proven methodologies and expert execution</span>, we
+                <span className="text-emerald-500 font-semibold">proven methodologies and expert execution</span>, we
                 provide unmatched value for enterprise clients.
               </p>
             </div>
@@ -173,10 +173,10 @@ export default function HomepageDifferentiators() {
                       <span
                         className={`text-xs font-bold px-3 py-1 rounded-full ${
                           index === 0
-                            ? "bg-blue-500/20 text-blue-300 border border-blue-400/30"
+                            ? "bg-blue-600 text-white border border-blue-400/30"
                             : index === 1
-                              ? "bg-purple-500/20 text-purple-300 border border-purple-400/30"
-                              : "bg-emerald-500/20 text-emerald-300 border border-emerald-400/30"
+                              ? "bg-purple-600 text-white border border-purple-400/30"
+                              : "bg-emerald-600 text-white border border-emerald-400/30"
                         }`}
                       >
                         {item.badge}
@@ -185,23 +185,23 @@ export default function HomepageDifferentiators() {
                   </div>
 
                   {/* Corporate value proposition */}
-                  <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700/50">
-                    <h3 className="text-2xl font-bold text-slate-200 mb-2">{item.title}</h3>
-                    <p className="text-sm text-blue-300 font-medium mb-3">{item.subtitle}</p>
-                    <p className="text-slate-400 leading-relaxed text-sm">{item.description}</p>
+                  <div className="bg-white rounded-lg p-4 border border-slate-700/50">
+                    <h3 className="text-2xl font-bold text-slate-500 mb-2">{item.title}</h3>
+                    <p className="text-sm text-blue-500 font-medium mb-3">{item.subtitle}</p>
+                    <p className="text-slate-500 leading-relaxed text-sm">{item.description}</p>
                   </div>
 
                   {/* Corporate capabilities matrix */}
                   <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-slate-300 flex items-center">
-                      <Analytics className="text-emerald-400 text-sm mr-2" />
+                    <h4 className="text-sm font-semibold text-slate-600 flex items-center">
+                      <Analytics className="text-emerald-500 text-sm mr-2" />
                       Enterprise Capabilities:
                     </h4>
                     <div className="grid grid-cols-1 gap-2">
                       {item.capabilities.map((capability, capIndex) => (
-                        <div key={capIndex} className="flex items-center space-x-2 bg-slate-800/20 rounded px-3 py-2">
+                        <div key={capIndex} className="flex items-center space-x-2 bg-white rounded px-3 py-2">
                           <div className="w-2 h-2 bg-emerald-400 rounded-full" />
-                          <span className="text-xs text-slate-400">{capability}</span>
+                          <span className="text-xs text-slate-500">{capability}</span>
                         </div>
                       ))}
                     </div>
@@ -209,12 +209,12 @@ export default function HomepageDifferentiators() {
 
                   {/* Corporate performance metrics */}
                   <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-slate-300">Performance Metrics:</h4>
+                    <h4 className="text-sm font-semibold text-slate-600">Performance Metrics:</h4>
                     {Object.entries(item.metrics).map(([metric, value]) => (
                       <div key={metric} className="space-y-1">
                         <div className="flex justify-between text-xs">
-                          <span className="text-slate-500 capitalize">{metric}</span>
-                          <span className="text-emerald-400 font-bold">{value}%</span>
+                          <span className="text-slate-600 capitalize">{metric}</span>
+                          <span className="text-emerald-600">{value}%</span>
                         </div>
                         <div className="w-full bg-slate-800 rounded-full h-1">
                           <motion.div
@@ -254,61 +254,61 @@ export default function HomepageDifferentiators() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Traditional approach */}
               <div className="text-center space-y-4 bg-red-900/10 rounded-lg p-6 border border-red-400/20">
-                <Business className="text-red-400 text-3xl mx-auto" />
-                <h4 className="text-lg font-bold text-red-400">Traditional In-House</h4>
+                <Business className="text-red-500 text-3xl mx-auto" />
+                <h4 className="text-lg font-bold text-red-500">Traditional In-House</h4>
                 <div className="space-y-2">
                   {["High Overhead Costs", "Limited Expertise", "Slow Adaptation", "Resource Constraints"].map(
                     (item, index) => (
-                      <div key={index} className="flex items-center space-x-2 text-sm text-slate-500">
-                        <div className="w-2 h-2 bg-red-400 rounded-full" />
+                      <div key={index} className="flex items-center space-x-2 text-sm text-slate-600">
+                        <div className="w-2 h-2 bg-red-500 rounded-full" />
                         <span>{item}</span>
                       </div>
                     ),
                   )}
                 </div>
-                <div className="bg-red-900/20 rounded-lg p-3 border border-red-400/30">
-                  <div className="text-2xl font-bold text-red-400">-60%</div>
-                  <div className="text-xs text-slate-500">Below Target ROI</div>
+                <div className="bg-red-50 rounded-lg p-3 border border-red-400/30">
+                  <div className="text-2xl font-bold text-red-500">-60%</div>
+                  <div className="text-xs text-slate-600">Below Target ROI</div>
                 </div>
               </div>
 
               {/* 3xGrowth advantage */}
               <div className="text-center space-y-4 bg-emerald-900/10 rounded-lg p-6 border border-emerald-400/20">
                 <Analytics className="text-emerald-400 text-3xl mx-auto" />
-                <h4 className="text-lg font-bold text-emerald-400">3xGrowth Enterprise</h4>
+                <h4 className="text-lg font-bold text-emerald-500">3xGrowth Enterprise</h4>
                 <div className="space-y-2">
                   {["Performance Guarantee", "Expert Team", "Rapid Implementation", "Proven Results"].map(
                     (item, index) => (
-                      <div key={index} className="flex items-center space-x-2 text-sm text-slate-300">
+                      <div key={index} className="flex items-center space-x-2 text-sm text-slate-600">
                         <div className="w-2 h-2 bg-emerald-400 rounded-full" />
                         <span>{item}</span>
                       </div>
                     ),
                   )}
                 </div>
-                <div className="bg-emerald-900/20 rounded-lg p-3 border border-emerald-400/30">
-                  <div className="text-2xl font-bold text-emerald-400">+300%</div>
-                  <div className="text-xs text-slate-500">ROI Improvement</div>
+                <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-400/30">
+                  <div className="text-2xl font-bold text-emerald-500">+300%</div>
+                  <div className="text-xs text-slate-600">ROI Improvement</div>
                 </div>
               </div>
 
               {/* Future potential */}
               <div className="text-center space-y-4 bg-blue-900/10 rounded-lg p-6 border border-blue-400/20">
-                <Security className="text-blue-400 text-3xl mx-auto" />
-                <h4 className="text-lg font-bold text-blue-400">Enterprise Future</h4>
+                <Security className="text-blue-500 text-3xl mx-auto" />
+                <h4 className="text-lg font-bold text-blue-500">Enterprise Future</h4>
                 <div className="space-y-2">
                   {["Scalable Growth", "Market Leadership", "Competitive Advantage", "Sustainable Success"].map(
                     (item, index) => (
-                      <div key={index} className="flex items-center space-x-2 text-sm text-slate-300">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full" />
+                      <div key={index} className="flex items-center space-x-2 text-sm text-slate-600">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full" />
                         <span>{item}</span>
                       </div>
                     ),
                   )}
                 </div>
-                <div className="bg-blue-900/20 rounded-lg p-3 border border-blue-400/30">
+                <div className="bg-blue-50 rounded-lg p-3 border border-blue-400/30">
                   <div className="text-2xl font-bold text-blue-400">∞</div>
-                  <div className="text-xs text-slate-500">Growth Potential</div>
+                  <div className="text-xs text-slate-600">Growth Potential</div>
                 </div>
               </div>
             </div>

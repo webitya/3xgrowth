@@ -39,7 +39,7 @@ export default function HomepageProblems() {
   ]
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-slate-950 via-red-950/10 to-slate-950 relative overflow-hidden">
+    <section className="pb-10 px-4 bg-gradient-to-br from-white via-blue-50 to-white relative overflow-hidden">
       {/* Corporate warning grid */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -83,7 +83,7 @@ export default function HomepageProblems() {
       <div className="max-w-7xl mx-auto relative z-10">
      
 
-        <NeuralInterface className="mb-16">
+        <NeuralInterface className="mb-16 py-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -101,15 +101,15 @@ export default function HomepageProblems() {
                 What s Stopping You
               </span>
               <br />
-              <span className="text-slate-200">From Achieving Wonders?</span>
+              <span className="text-slate-500">From Achieving Wonders?</span>
             </h2>
 
-            <div className="max-w-4xl mx-auto bg-slate-900/60 backdrop-blur-xl border border-red-400/20 rounded-2xl p-8">
-              <p className="text-xl text-slate-300 leading-relaxed mb-4">
-                We understand the <span className="text-red-300 font-semibold">critical challenges</span> that prevent
+            <div className="max-w-4xl mx-auto bg-white backdrop-blur-xl border border-red-400/20 rounded-2xl p-8">
+              <p className="text-xl text-zinc-800 leading-relaxed mb-4">
+                We understand the <span className="text-red-400 font-semibold">critical challenges</span> that prevent
                 enterprises from achieving their growth potential.
               </p>
-              <p className="text-lg text-slate-400 leading-relaxed">
+              <p className="text-lg text-zinc-800 leading-relaxed">
                 Let s solve it with{" "}
                 <span className="text-emerald-300 font-semibold">accountability, accuracy, and action</span>.
               </p>
@@ -138,17 +138,17 @@ export default function HomepageProblems() {
                     <div className="flex items-center space-x-3">
                       <div className="relative">
                         {challenge.icon}
-                        <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center">
+                        <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center">
                           <ErrorOutline className="text-white text-xs" />
                         </div>
                       </div>
                       <span
                         className={`text-xs font-bold px-3 py-1 rounded-full ${
                           challenge.severity === "Critical"
-                            ? "bg-red-500/20 text-red-300 border border-red-400/30"
+                            ? "bg-red-500 text-white border border-red-500"
                             : challenge.severity === "High"
-                              ? "bg-orange-500/20 text-orange-300 border border-orange-400/30"
-                              : "bg-yellow-500/20 text-yellow-300 border border-yellow-400/30"
+                              ? "bg-orange-500 text-white border border-orange-500"
+                              : "bg-blue-500 text-white border border-yellow-50"
                         }`}
                       >
                         {challenge.severity.toUpperCase()} RISK
@@ -157,39 +157,39 @@ export default function HomepageProblems() {
                   </div>
 
                   {/* Corporate problem definition */}
-                  <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700/50">
-                    <h3 className="text-xl font-bold text-slate-200 mb-2">{challenge.title}</h3>
-                    <p className="text-sm text-blue-300 font-medium mb-3">{challenge.subtitle}</p>
-                    <p className="text-slate-400 leading-relaxed text-sm">{challenge.description}</p>
+                  <div className="bg-white rounded-lg p-4 border border-slate-700/50">
+                    <h3 className="text-xl font-bold text-slate-500 mb-2">{challenge.title}</h3>
+                    <p className="text-sm text-blue-500 font-medium mb-3">{challenge.subtitle}</p>
+                    <p className="text-slate-500 leading-relaxed text-sm">{challenge.description}</p>
                   </div>
 
                   {/* Corporate impact metrics */}
                   <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-slate-300 flex items-center">
-                      <Business className="text-red-400 text-sm mr-2" />
+                    <h4 className="text-sm font-semibold text-slate-500 flex items-center">
+                      <Business className="text-red-500 text-sm mr-2" />
                       Business Impact Metrics:
                     </h4>
                     <div className="grid grid-cols-1 gap-2">
                       {Object.entries(challenge.metrics).map(([key, value]) => (
-                        <div key={key} className="flex justify-between items-center bg-slate-800/20 rounded px-3 py-2">
-                          <span className="text-xs text-slate-500 capitalize">{key.replace(/([A-Z])/g, " $1")}</span>
-                          <span className="text-xs font-bold text-red-400">{value}</span>
+                        <div key={key} className="flex justify-between items-center bg-white rounded px-3 py-2">
+                          <span className="text-xs text-slate-600 capitalize">{key.replace(/([A-Z])/g, " $1")}</span>
+                          <span className="text-xs font-bold text-red-500">{value}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
                   {/* Corporate consequence analysis */}
-                  <div className="pt-4 border-t border-slate-700">
-                    <h4 className="text-sm font-semibold text-red-300 mb-2">Operational Consequences:</h4>
-                    <p className="text-xs text-slate-500 bg-red-900/10 rounded p-2 border border-red-400/20">
+                  <div className="pt-4 border-t border-slate-800">
+                    <h4 className="text-sm font-semibold text-red-500 mb-2">Operational Consequences:</h4>
+                    <p className="text-xs text-slate-600 bg-red-900/10 rounded p-2 border border-red-400/20">
                       {challenge.impact}
                     </p>
                   </div>
 
                   {/* Corporate risk indicator */}
                   <div className="flex items-center justify-between text-xs pt-2">
-                    <span className="text-slate-500">Risk Level</span>
+                    <span className="text-slate-700">Risk Level</span>
                     <div className="flex items-center space-x-2">
                       <div className="w-16 bg-slate-800 rounded-full h-1">
                         <motion.div
@@ -239,17 +239,17 @@ export default function HomepageProblems() {
             <div className="space-y-8">
               {/* Corporate solution header */}
               <div className="flex items-center justify-center space-x-4 mb-6">
-                <Business className="text-emerald-400 text-3xl" />
+                <Business className="text-emerald-500 text-3xl" />
                 <div className="text-left">
-                  <h3 className="text-2xl font-bold text-slate-200">3xGrowth Enterprise Solution</h3>
-                  <p className="text-sm text-emerald-300">Risk Mitigation & Growth Acceleration Protocol</p>
+                  <h3 className="text-2xl font-bold text-slate-600">3xGrowth Enterprise Solution</h3>
+                  <p className="text-sm text-emerald-400">Risk Mitigation & Growth Acceleration Protocol</p>
                 </div>
               </div>
 
-              <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mx-auto">
-                Our <span className="text-blue-300 font-semibold">performance-driven approach</span> eliminates these
+              <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                Our <span className="text-blue-500 font-semibold">performance-driven approach</span> eliminates these
                 enterprise challenges through proven B2B marketing strategies, expert execution, and
-                <span className="text-emerald-300 font-semibold"> measurable results</span>.
+                <span className="text-emerald-500 font-semibold"> measurable results</span>.
               </p>
 
               {/* Corporate success metrics */}
@@ -261,25 +261,25 @@ export default function HomepageProblems() {
                 ].map((metric, index) => (
                   <motion.div
                     key={index}
-                    className="bg-slate-800/30 rounded-lg p-4 border border-emerald-400/20"
+                    className="bg-white rounded-lg p-4 border border-emerald-400/20"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
                     <div className="text-2xl mb-2">{metric.icon}</div>
-                    <div className="text-2xl font-bold text-emerald-400">{metric.value}</div>
-                    <div className="text-xs text-slate-500">{metric.label}</div>
+                    <div className="text-2xl font-bold text-emerald-500">{metric.value}</div>
+                    <div className="text-xs text-slate-600">{metric.label}</div>
                   </motion.div>
                 ))}
               </div>
 
               {/* Corporate guarantee */}
-              <div className="bg-emerald-900/20 rounded-lg p-6 border border-emerald-400/30">
+              <div className="bg-emerald-50 py-5  rounded-lg p-6 border border-emerald-400/30">
                 <div className="flex items-center justify-center space-x-2 mb-3">
                   <Business className="text-emerald-400" />
-                  <span className="text-emerald-300 font-bold">Enterprise Performance Guarantee</span>
+                  <span className="text-emerald-500 font-bold">Enterprise Performance Guarantee</span>
                 </div>
-                <p className="text-sm text-slate-400">
+                <p className="text-sm text-slate-600">
                   Accountability, accuracy, and action - backed by 8+ years of proven enterprise success
                 </p>
               </div>

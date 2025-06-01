@@ -10,19 +10,19 @@ export default function HolographicPanel({ title, children, className = "", vari
     primary: {
       bg: "from-slate-900/80 via-slate-800/60 to-slate-900/80",
       border: "border-blue-400/20",
-      accent: "text-blue-300",
+      accent: "text-blue-500",
       glow: "rgba(59, 130, 246, 0.15)",
     },
     secondary: {
       bg: "from-slate-900/80 via-purple-900/40 to-slate-900/80",
       border: "border-purple-400/20",
-      accent: "text-purple-300",
+      accent: "text-purple-500",
       glow: "rgba(147, 51, 234, 0.15)",
     },
     accent: {
       bg: "from-slate-900/80 via-emerald-900/40 to-slate-900/80",
       border: "border-emerald-400/20",
-      accent: "text-emerald-300",
+      accent: "text-emerald-500",
       glow: "rgba(16, 185, 129, 0.15)",
     },
   }
@@ -52,7 +52,7 @@ export default function HolographicPanel({ title, children, className = "", vari
       style={{
         background: `linear-gradient(135deg, ${currentVariant.bg})`,
         boxShadow: `
-          0 25px 50px -12px rgba(0, 0, 0, 0.8),
+          0 25px 50px -12px rgba(0, 0, 0, 0.2),
           0 0 30px ${currentVariant.glow},
           inset 0 1px 0 rgba(255, 255, 255, 0.1)
         `,
