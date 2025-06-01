@@ -82,7 +82,7 @@ export default function HomepageServices() {
   ]
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-slate-950 via-blue-950/10 to-slate-950 relative overflow-hidden">
+    <section className="py-0 pb-10 px-4 bg-gradient-to-br from-white via-green-50 to-white relative overflow-hidden">
       {/* Corporate service grid */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -126,27 +126,9 @@ export default function HomepageServices() {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Corporate service header */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex justify-center mb-8"
-        >
-          <div className="flex items-center space-x-6 px-8 py-4 bg-slate-900/80 backdrop-blur-xl border border-blue-400/30 rounded-xl">
-            <Analytics className="text-blue-400 text-2xl" />
-            <div className="text-left">
-              <div className="text-blue-400 text-sm font-bold tracking-wider">ENTERPRISE SERVICE PORTFOLIO</div>
-              <div className="text-slate-400 text-xs">Comprehensive B2B Marketing Solutions</div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Business className="text-emerald-400 text-sm" />
-              <span className="text-xs font-semibold text-emerald-300">PROVEN</span>
-            </div>
-          </div>
-        </motion.div>
+    
 
-        <NeuralInterface className="mb-16">
+        <NeuralInterface className="mb-16 py-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -154,7 +136,7 @@ export default function HomepageServices() {
             className="text-center"
           >
             <h2 className="text-5xl md:text-6xl font-black mb-6">
-              <span className="text-slate-200">Our Enterprise</span>
+              <span className="text-slate-500">Our Enterprise</span>
               <span
                 className="bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 bg-clip-text text-transparent ml-3"
                 style={{
@@ -166,13 +148,13 @@ export default function HomepageServices() {
               </span>
             </h2>
 
-            <div className="max-w-4xl mx-auto bg-slate-900/60 backdrop-blur-xl border border-blue-400/20 rounded-2xl p-8">
-              <p className="text-xl text-slate-300 leading-relaxed mb-4">
-                Comprehensive <span className="text-blue-300 font-semibold">B2B marketing solutions</span> designed to
+            <div className="max-w-4xl mx-auto bg-white backdrop-blur-xl border border-blue-400/20 rounded-2xl p-8">
+              <p className="text-xl text-slate-500 leading-relaxed mb-4">
+                Comprehensive <span className="text-blue-500 font-semibold">B2B marketing solutions</span> designed to
                 accelerate your business growth through proven strategies.
               </p>
-              <p className="text-lg text-slate-400 leading-relaxed">
-                <span className="text-emerald-300 font-semibold">Expert execution</span> backed by 8+ years of
+              <p className="text-lg text-slate-500 leading-relaxed">
+                <span className="text-emerald-500 font-semibold">Expert execution</span> backed by 8+ years of
                 enterprise experience and 100+ successful client transformations.
               </p>
             </div>
@@ -207,45 +189,45 @@ export default function HomepageServices() {
                         >
                           {service.icon}
                         </motion.div>
-                        <div className="absolute -top-2 -right-2 w-6 h-6 bg-emerald-400 rounded-full flex items-center justify-center">
+                        <div className="absolute -top-2 -right-2 w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center">
                           <Business className="text-slate-900 text-xs" />
                         </div>
                       </div>
-                      <span className="text-xs font-bold px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30">
+                      <span className="text-xs font-bold px-3 py-1 rounded-full bg-blue-600 text-white border border-blue-400/30">
                         ENTERPRISE
                       </span>
                     </div>
                     <div className="text-right">
-                      <div className="text-xs text-slate-500">Delivery</div>
-                      <div className="text-sm font-bold text-emerald-400">{service.timeline}</div>
+                      <div className="text-xs text-slate-600">Delivery</div>
+                      <div className="text-sm font-bold text-emerald-600">{service.timeline}</div>
                     </div>
                   </div>
 
                   {/* Corporate service definition */}
-                  <div className="bg-slate-800/30 rounded-lg p-4 border border-slate-700/50">
+                  <div className="bg-slate-white rounded-lg p-4 border border-slate-700/50">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-2xl font-bold text-slate-200">{service.title}</h3>
+                      <h3 className="text-2xl font-bold text-slate-600">{service.title}</h3>
                       {service.formerly && (
-                        <span className="text-xs text-slate-500 bg-slate-700/50 px-2 py-1 rounded">
+                        <span className="text-xs text-slate-600 bg-white px-2 py-1 rounded">
                           Formerly: {service.formerly}
                         </span>
                       )}
                     </div>
-                    <p className="text-sm text-blue-300 font-medium mb-3">{service.subtitle}</p>
-                    <p className="text-slate-400 leading-relaxed text-sm">{service.description}</p>
+                    <p className="text-sm text-blue-600 font-medium mb-3">{service.subtitle}</p>
+                    <p className="text-slate-600 leading-relaxed text-sm">{service.description}</p>
                   </div>
 
                   {/* Corporate capabilities matrix */}
                   <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-slate-300 flex items-center">
-                      <Analytics className="text-emerald-400 text-sm mr-2" />
+                    <h4 className="text-sm font-semibold text-slate-600 flex items-center">
+                      <Analytics className="text-emerald-500 text-sm mr-2" />
                       Enterprise Capabilities:
                     </h4>
                     <div className="grid grid-cols-2 gap-2">
                       {service.capabilities.map((capability, capIndex) => (
-                        <div key={capIndex} className="flex items-center space-x-2 bg-slate-800/20 rounded px-3 py-2">
-                          <CheckCircle className="text-emerald-400 text-xs" />
-                          <span className="text-xs text-slate-400">{capability}</span>
+                        <div key={capIndex} className="flex items-center space-x-2 bg-white rounded px-3 py-2">
+                          <CheckCircle className="text-emerald-500 text-xs" />
+                          <span className="text-xs text-slate-500">{capability}</span>
                         </div>
                       ))}
                     </div>
@@ -253,12 +235,12 @@ export default function HomepageServices() {
 
                   {/* Corporate performance metrics */}
                   <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-slate-300">Performance Metrics:</h4>
+                    <h4 className="text-sm font-semibold text-slate-500">Performance Metrics:</h4>
                     {Object.entries(service.metrics).map(([metric, value]) => (
                       <div key={metric} className="space-y-1">
                         <div className="flex justify-between text-xs">
-                          <span className="text-slate-500 capitalize">{metric.replace(/([A-Z])/g, " $1")}</span>
-                          <span className="text-emerald-400 font-bold">
+                          <span className="text-slate-600 capitalize">{metric.replace(/([A-Z])/g, " $1")}</span>
+                          <span className="text-emerald-600 font-bold">
                             {typeof value === "number" && value > 100 ? `+${value}%` : `${value}%`}
                           </span>
                         </div>
@@ -277,10 +259,10 @@ export default function HomepageServices() {
                   {/* Corporate output delivery */}
                   <div className="pt-4 border-t border-slate-700 bg-emerald-900/10 rounded-lg p-4">
                     <div className="flex items-center space-x-2 mb-2">
-                      <Business className="text-emerald-400 text-sm" />
+                      <Business className="text-emerald-500 text-sm" />
                       <span className="text-xs text-slate-500 font-semibold">Enterprise Output:</span>
                     </div>
-                    <div className="text-sm font-medium text-emerald-400">{service.output}</div>
+                    <div className="text-sm font-medium text-emerald-500">{service.output}</div>
                   </div>
                 </div>
               </HolographicPanel>
@@ -304,16 +286,16 @@ export default function HomepageServices() {
             <div className="space-y-8">
               {/* Corporate deployment header */}
               <div className="flex items-center justify-center space-x-4 mb-6">
-                <Business className="text-blue-400 text-3xl" />
+                <Business className="text-blue-500 text-3xl" />
                 <div className="text-left">
-                  <h3 className="text-2xl font-bold text-slate-200">Ready to Transform Your B2B Marketing?</h3>
-                  <p className="text-sm text-blue-300">Enterprise-Grade Solutions Available Now</p>
+                  <h3 className="text-2xl font-bold text-slate-500">Ready to Transform Your B2B Marketing?</h3>
+                  <p className="text-sm text-blue-500">Enterprise-Grade Solutions Available Now</p>
                 </div>
               </div>
 
-              <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg text-slate-500 leading-relaxed max-w-3xl mx-auto">
                 Let s discuss which services are right for your business and create a
-                <span className="text-blue-300 font-semibold"> customized growth strategy</span> backed by our proven
+                <span className="text-blue-500 font-semibold"> customized growth strategy</span> backed by our proven
                 enterprise methodologies.
               </p>
 
@@ -322,8 +304,8 @@ export default function HomepageServices() {
                 <QuantumButton variant="primary" size="large" className="relative overflow-hidden">
                   <Link href="/services" className="block relative z-10">
                     <div className="flex items-center space-x-2">
-                      <Analytics className="text-lg" />
-                      <span>Explore Enterprise Solutions</span>
+                      <Analytics className="text-lg text-blue-500" />
+                      <span className="text-zinc-500">Explore Enterprise Solutions</span>
                     </div>
                   </Link>
                 </QuantumButton>
@@ -331,8 +313,8 @@ export default function HomepageServices() {
                 <QuantumButton variant="secondary" size="large" className="relative overflow-hidden">
                   <Link href="/contact" className="block relative z-10">
                     <div className="flex items-center space-x-2">
-                      <Business className="text-lg" />
-                      <span>Schedule Consultation</span>
+                      <Business className="text-lg text-purple-500" />
+                      <span className="text-zinc-500">Schedule Consultation</span>
                     </div>
                   </Link>
                 </QuantumButton>
@@ -347,25 +329,25 @@ export default function HomepageServices() {
                 ].map((metric, index) => (
                   <motion.div
                     key={index}
-                    className="text-center bg-slate-800/30 rounded-lg p-4 border border-blue-400/20"
+                    className="text-center bg-white rounded-lg p-4 border border-blue-400/20"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
                     <div className="text-2xl mb-2">{metric.icon}</div>
-                    <div className="text-2xl font-bold text-emerald-400 mb-1">{metric.value}</div>
-                    <div className="text-xs text-slate-500">{metric.label}</div>
+                    <div className="text-2xl font-bold text-emerald-500 mb-1">{metric.value}</div>
+                    <div className="text-xs text-slate-600">{metric.label}</div>
                   </motion.div>
                 ))}
               </div>
 
               {/* Corporate guarantee */}
-              <div className="bg-blue-900/20 rounded-lg p-6 border border-blue-400/30">
+              <div className="bg-white rounded-lg p-6 border border-blue-400/30">
                 <div className="flex items-center justify-center space-x-2 mb-3">
-                  <Business className="text-blue-400" />
-                  <span className="text-blue-300 font-bold">Enterprise Performance Guarantee</span>
+                  <Business className="text-blue-500" />
+                  <span className="text-blue-500 font-bold">Enterprise Performance Guarantee</span>
                 </div>
-                <p className="text-sm text-slate-400">
+                <p className="text-sm text-slate-500">
                   Proven strategies, expert execution, and measurable results backed by 8+ years of enterprise success
                 </p>
               </div>

@@ -8,7 +8,7 @@ import QuantumButton from "@/components/advanced/QuantumButton"
 
 export default function HomepageCTA() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-blue-950/30 via-purple-950/30 to-emerald-950/30 relative overflow-hidden">
+    <section className="py-0 pb-10 px-4 bg-gradient-to-br from-white via-purple-50 to-emerald-50 relative overflow-hidden">
       {/* Corporate CTA grid */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -53,52 +53,17 @@ export default function HomepageCTA() {
       </div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
-        {/* Corporate readiness indicator */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex justify-center mb-8"
-        >
-          <div className="flex items-center space-x-6 px-8 py-4 bg-slate-900/80 backdrop-blur-xl border border-emerald-400/30 rounded-xl">
-            <RocketLaunch className="text-emerald-400 text-2xl" />
-            <div className="text-left">
-              <div className="text-emerald-400 text-sm font-bold tracking-wider">ENTERPRISE READY</div>
-              <div className="text-slate-400 text-xs">Performance Systems Online</div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse" />
-              <span className="text-xs font-semibold text-emerald-300">ACTIVE</span>
-            </div>
-          </div>
-        </motion.div>
+  
 
         <NeuralInterface className="mb-12">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             {/* Corporate CTA header */}
-            <div className="flex items-center justify-center mb-8">
-              <div className="relative">
-                <RocketLaunch
-                  className="text-6xl text-blue-400 mr-4"
-                  style={{
-                    animation: "corporateFloat 6s ease-in-out infinite",
-                    filter: "drop-shadow(0 0 20px rgba(59, 130, 246, 0.6))",
-                  }}
-                />
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-emerald-400 rounded-full flex items-center justify-center">
-                  <Business className="text-slate-900 text-sm" />
-                </div>
-              </div>
-              <div className="text-left">
-                <div className="text-blue-400 text-sm font-semibold tracking-wider">READY TO START</div>
-                <div className="text-slate-300 text-xs">Enterprise B2B Transformation</div>
-              </div>
-            </div>
+       
 
-            <h2 className="text-5xl md:text-6xl font-black mb-6">
-              <span className="text-slate-200">Ready to</span>
+            <h2 className="text-5xl md:text-6xl font-black mb-6 py-5">
+              <span className="text-slate-600">Ready to</span>
               <span
-                className="bg-gradient-to-r from-blue-400 via-purple-500 to-emerald-400 bg-clip-text text-transparent ml-3"
+                className="bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 bg-clip-text text-transparent ml-3"
                 style={{
                   backgroundSize: "200% 200%",
                   animation: "corporatePulse 4s ease-in-out infinite",
@@ -108,13 +73,13 @@ export default function HomepageCTA() {
               </span>
             </h2>
 
-            <div className="max-w-4xl mx-auto bg-slate-900/60 backdrop-blur-xl border border-blue-400/20 rounded-2xl p-8">
-              <p className="text-xl text-slate-300 mb-4 leading-relaxed">
-                Join <span className="text-blue-300 font-semibold">100+ enterprise companies</span> that have
+            <div className="max-w-4xl mx-auto bg-white backdrop-blur-xl border border-blue-400/20 rounded-2xl p-8">
+              <p className="text-xl text-slate-600 mb-4 leading-relaxed">
+                Join <span className="text-blue-600 font-semibold">100+ enterprise companies</span> that have
                 transformed their B2B marketing and sales operations with our proven strategies.
               </p>
-              <p className="text-lg text-slate-400 leading-relaxed">
-                <span className="text-emerald-300 font-semibold">Expert execution</span> and measurable results backed
+              <p className="text-lg text-slate-600 leading-relaxed">
+                <span className="text-emerald-600 font-semibold">Expert execution</span> and measurable results backed
                 by 8+ years of enterprise success.
               </p>
             </div>
@@ -132,9 +97,9 @@ export default function HomepageCTA() {
             <HolographicPanel title="PRIMARY DEPLOYMENT" variant="primary" level={5}>
               <div className="space-y-6">
                 <div className="text-center">
-                  <Business className="text-blue-400 text-4xl mb-4" />
-                  <h3 className="text-2xl font-bold text-slate-200 mb-3">Start Talking to Your Prospects Today</h3>
-                  <p className="text-slate-400 leading-relaxed">
+                  <Business className="text-blue-4600 text-4xl mb-4" />
+                  <h3 className="text-2xl font-bold text-slate-600 mb-3">Start Talking to Your Prospects Today</h3>
+                  <p className="text-slate-600 leading-relaxed">
                     Begin your enterprise growth journey with our proven B2B marketing strategies and see measurable
                     results within weeks of implementation.
                   </p>
@@ -144,20 +109,20 @@ export default function HomepageCTA() {
                   <QuantumButton variant="primary" size="large" className="w-full">
                     <Link href="/contact" className="block">
                       <div className="flex items-center justify-center space-x-2">
-                        <RocketLaunch className="text-lg" />
-                        <span>Start Your Growth Journey</span>
+                        <RocketLaunch className="text-lg text-blue-600" />
+                        <span className="text-zinc-600">Start Your Growth Journey</span>
                       </div>
                     </Link>
                   </QuantumButton>
 
                   <div className="grid grid-cols-2 gap-4 text-center">
-                    <div className="bg-slate-800/30 rounded-lg p-3 border border-emerald-400/20">
-                      <div className="text-lg font-bold text-emerald-400">Free</div>
-                      <div className="text-xs text-slate-500">Enterprise Consultation</div>
+                    <div className="bg-white rounded-lg p-3 border border-emerald-400/20">
+                      <div className="text-lg font-bold text-emerald-600">Free</div>
+                      <div className="text-xs text-slate-600">Enterprise Consultation</div>
                     </div>
-                    <div className="bg-slate-800/30 rounded-lg p-3 border border-blue-400/20">
-                      <div className="text-lg font-bold text-blue-400">48h</div>
-                      <div className="text-xs text-slate-500">Implementation Start</div>
+                    <div className="bg-white rounded-lg p-3 border border-blue-400/20">
+                      <div className="text-lg font-bold text-blue-600">48h</div>
+                      <div className="text-xs text-slate-600">Implementation Start</div>
                     </div>
                   </div>
                 </div>
@@ -174,9 +139,9 @@ export default function HomepageCTA() {
             <HolographicPanel title="SOLUTION EXPLORATION" variant="secondary" level={4}>
               <div className="space-y-6">
                 <div className="text-center">
-                  <Analytics className="text-purple-400 text-4xl mb-4" />
-                  <h3 className="text-2xl font-bold text-slate-200 mb-3">Discover Enterprise Solutions</h3>
-                  <p className="text-slate-400 leading-relaxed">
+                  <Analytics className="text-purple-600 text-4xl mb-4" />
+                  <h3 className="text-2xl font-bold text-slate-600 mb-3">Discover Enterprise Solutions</h3>
+                  <p className="text-slate-600 leading-relaxed">
                     Explore our comprehensive service portfolio and see how we can help transform your business with
                     proven enterprise methodologies.
                   </p>
@@ -186,8 +151,8 @@ export default function HomepageCTA() {
                   <QuantumButton variant="secondary" size="large" className="w-full">
                     <Link href="/services" className="block">
                       <div className="flex items-center justify-center space-x-2">
-                        <Analytics className="text-lg" />
-                        <span>View Enterprise Services</span>
+                        <Analytics className="text-lg text-blue-500" />
+                        <span className="text-zinc-600">View Enterprise Services</span>
                       </div>
                     </Link>
                   </QuantumButton>
@@ -195,8 +160,8 @@ export default function HomepageCTA() {
                   <QuantumButton variant="accent" size="medium" className="w-full">
                     <Link href="/projects" className="block">
                       <div className="flex items-center justify-center space-x-2">
-                        <TrendingUp className="text-lg" />
-                        <span>See Success Stories</span>
+                        <TrendingUp className="text-lg text-purple-500" />
+                        <span className="text-zinc-600">See Success Stories</span>
                       </div>
                     </Link>
                   </QuantumButton>
@@ -221,28 +186,28 @@ export default function HomepageCTA() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {[
                 {
-                  icon: <TrendingUp className="text-3xl text-emerald-400" />,
+                  icon: <TrendingUp className="text-3xl text-emerald-500" />,
                   metric: "3x",
                   label: "Growth Acceleration",
                   description: "Average business growth",
                   badge: "PROVEN",
                 },
                 {
-                  icon: <Speed className="text-3xl text-blue-400" />,
+                  icon: <Speed className="text-3xl text-blue-500" />,
                   metric: "8+",
                   label: "Years Experience",
                   description: "Enterprise track record",
                   badge: "EXPERT",
                 },
                 {
-                  icon: <Business className="text-3xl text-purple-400" />,
+                  icon: <Business className="text-3xl text-purple-500" />,
                   metric: "100+",
                   label: "Enterprise Clients",
                   description: "Successful transformations",
                   badge: "TRUSTED",
                 },
                 {
-                  icon: <Security className="text-3xl text-pink-400" />,
+                  icon: <Security className="text-3xl text-pink-500" />,
                   metric: "300%",
                   label: "ROI Improvement",
                   description: "Average performance gain",
@@ -251,19 +216,19 @@ export default function HomepageCTA() {
               ].map((item, index) => (
                 <motion.div
                   key={index}
-                  className="text-center space-y-3 bg-slate-800/30 rounded-lg p-6 border border-slate-700/50"
+                  className="text-center space-y-3 bg-white rounded-lg p-6 border border-slate-700/50"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
                   <div className="relative">
                     <div className="flex justify-center">{item.icon}</div>
-                    <div className="absolute -top-2 -right-2 text-xs font-bold px-2 py-1 bg-emerald-500/20 text-emerald-300 rounded-full border border-emerald-400/30">
+                    <div className="absolute -top-2 -right-2 text-xs font-bold px-2 py-1 bg-emerald-500 text-white rounded-full border border-emerald-400/30">
                       {item.badge}
                     </div>
                   </div>
-                  <div className="text-2xl font-bold text-slate-200">{item.metric}</div>
-                  <div className="text-sm font-medium text-slate-300">{item.label}</div>
+                  <div className="text-2xl font-bold text-slate-600">{item.metric}</div>
+                  <div className="text-sm font-medium text-slate-500">{item.label}</div>
                   <div className="text-xs text-slate-500">{item.description}</div>
                 </motion.div>
               ))}
@@ -271,11 +236,11 @@ export default function HomepageCTA() {
 
             {/* Corporate guarantee */}
             <div className="mt-8 pt-8 border-t border-slate-700 text-center">
-              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-emerald-500/20 rounded-lg border border-emerald-400/30">
-                <Security className="text-emerald-400 text-lg" />
-                <span className="text-emerald-300 font-semibold">Enterprise Performance Guarantee</span>
+              <div className="inline-flex items-center space-x-2 px-6 py-3 bg-emerald-50 rounded-lg border border-emerald-400/30">
+                <Security className="text-emerald-500 text-lg" />
+                <span className="text-emerald-500 font-semibold">Enterprise Performance Guarantee</span>
               </div>
-              <p className="text-sm text-slate-400 mt-3 max-w-2xl mx-auto">
+              <p className="text-sm text-slate-600 mt-3 max-w-2xl mx-auto">
                 Accountability, accuracy, and action - backed by proven enterprise methodologies and 8+ years of
                 measurable success across 100+ client transformations
               </p>
