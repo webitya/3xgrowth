@@ -8,10 +8,10 @@ export default function ServicesHero() {
       <div className="max-w-7xl mx-auto text-center">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">Our Services</span>
+            <span className="text-purple-400">Our Services</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-4xl mx-auto">
             Comprehensive B2B marketing solutions designed to accelerate your growth through precision targeting and
             proven strategies.
           </p>
@@ -24,19 +24,19 @@ export default function ServicesHero() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           <div className="glass-effect p-6 rounded-lg">
-            <Build className="text-blue-400 text-4xl mb-4 mx-auto" />
-            <h3 className="text-xl font-semibold mb-2">Build</h3>
-            <p className="text-gray-400">Precise targeting and data building</p>
+            <Build className="text-blue-600 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold mb-2 text-zinc-600">Build</h3>
+            <p className="text-gray-600">Precise targeting and data building</p>
           </div>
           <div className="glass-effect p-6 rounded-lg">
-            <CenterFocusStrong className="text-purple-400 text-4xl mb-4 mx-auto" />
-            <h3 className="text-xl font-semibold mb-2">Connect</h3>
-            <p className="text-gray-400">First contact with prospects</p>
+            <CenterFocusStrong className="text-purple-600 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold mb-2 text-zinc-600">Connect</h3>
+            <p className="text-gray-600">First contact with prospects</p>
           </div>
           <div className="glass-effect p-6 rounded-lg">
-            <TrendingUp className="text-green-400 text-4xl mb-4 mx-auto" />
-            <h3 className="text-xl font-semibold mb-2">Convert</h3>
-            <p className="text-gray-400">Generate qualified appointments</p>
+            <TrendingUp className="text-green-500 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold mb-2 text-zinc-600">Convert</h3>
+            <p className="text-gray-600">Generate qualified appointments</p>
           </div>
         </motion.div>
       </div>

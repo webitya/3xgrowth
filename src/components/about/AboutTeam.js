@@ -13,7 +13,7 @@ export default function AboutTeam() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Our Expertise</span>
+            <span className="text-green-600">Our Expertise</span>
           </h2>
         </motion.div>
 
@@ -24,9 +24,9 @@ export default function AboutTeam() {
             transition={{ duration: 0.8 }}
             className="glass-effect p-8 rounded-lg text-center"
           >
-            <School className="text-5xl text-blue-400 mb-6 mx-auto" />
-            <h3 className="text-2xl font-bold mb-4 text-white">Continuous Learning</h3>
-            <p className="text-gray-300">
+            <School className="text-5xl text-blue-500 mb-6 mx-auto" />
+            <h3 className="text-2xl font-bold mb-4 text-zinc-800">Continuous Learning</h3>
+            <p className="text-gray-600">
               Our team is trained regularly on the latest marketing trends, tools, and communication strategies to stay
               ahead of the curve.
             </p>
@@ -38,9 +38,9 @@ export default function AboutTeam() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="glass-effect p-8 rounded-lg text-center"
           >
-            <TrendingUp className="text-5xl text-green-400 mb-6 mx-auto" />
-            <h3 className="text-2xl font-bold mb-4 text-white">Data-Driven Approach</h3>
-            <p className="text-gray-300">
+            <TrendingUp className="text-5xl text-green-500 mb-6 mx-auto" />
+            <h3 className="text-2xl font-bold mb-4 text-zinc-700">Data-Driven Approach</h3>
+            <p className="text-gray-600">
               We build a problem-solving, data-led mindset in everything we do, ensuring decisions are backed by solid
               metrics and insights.
             </p>
@@ -52,9 +52,9 @@ export default function AboutTeam() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="glass-effect p-8 rounded-lg text-center"
           >
-            <Group className="text-5xl text-purple-400 mb-6 mx-auto" />
-            <h3 className="text-2xl font-bold mb-4 text-white">Strong Network</h3>
-            <p className="text-gray-300">
+            <Group className="text-5xl text-purple-500 mb-6 mx-auto" />
+            <h3 className="text-2xl font-bold mb-4 text-zinc-800">Strong Network</h3>
+            <p className="text-gray-600">
               Our strong talent network and performance-based approach ensure that your sales strategy is always headed
               in the right direction.
             </p>

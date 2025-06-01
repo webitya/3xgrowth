@@ -5,7 +5,7 @@ import { GpsFixed, ConnectWithoutContact, EventNote, Campaign, CheckCircle } fro
 export default function ServicesList() {
   const services = [
     {
-      icon: <GpsFixed className="text-6xl text-blue-400" />,
+      icon: <GpsFixed className="text-6xl text-blue-600" />,
       title: "Pinpoint",
       subtitle: "Define your ideal customer with precision",
       description:
@@ -20,7 +20,7 @@ export default function ServicesList() {
       formerly: "Enrich",
     },
     {
-      icon: <ConnectWithoutContact className="text-6xl text-green-400" />,
+      icon: <ConnectWithoutContact className="text-6xl text-green-600" />,
       title: "Breakthrough",
       subtitle: "First connection is your first conversion",
       description:
@@ -35,7 +35,7 @@ export default function ServicesList() {
       formerly: "Connect",
     },
     {
-      icon: <EventNote className="text-6xl text-purple-400" />,
+      icon: <EventNote className="text-6xl text-purple-600" />,
       title: "Pipeline",
       subtitle: "Generate real meetings, not just leads",
       description:
@@ -50,7 +50,7 @@ export default function ServicesList() {
       formerly: "Generate",
     },
     {
-      icon: <Campaign className="text-6xl text-pink-400" />,
+      icon: <Campaign className="text-6xl text-pink-600" />,
       title: "Influence",
       subtitle: "Turn meetings into movements",
       description:
@@ -71,9 +71,9 @@ export default function ServicesList() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Complete Service Portfolio</span>
+            <span className="text-purple-400">Complete Service Portfolio</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-500 max-w-3xl mx-auto">
             From identifying prospects to closing deals, we cover every aspect of your B2B marketing journey
           </p>
         </motion.div>
@@ -91,22 +91,22 @@ export default function ServicesList() {
             >
               <div className={`${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
                 <div className="mb-6">{service.icon}</div>
-                <h3 className="text-3xl font-bold mb-2 text-white">{service.title}</h3>
-                <p className="text-xl text-blue-300 mb-6">{service.subtitle}</p>
-                <p className="text-gray-300 mb-8 leading-relaxed text-lg">{service.description}</p>
+                <h3 className="text-3xl font-bold mb-2 text-zinc-600">{service.title}</h3>
+                <p className="text-xl text-blue-500 mb-6">{service.subtitle}</p>
+                <p className="text-gray-500 mb-8 leading-relaxed text-lg">{service.description}</p>
 
                 <div className="space-y-3 mb-8">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-3">
-                      <CheckCircle className="text-green-400 text-xl" />
-                      <span className="text-gray-300">{feature}</span>
+                      <CheckCircle className="text-green-500 text-xl" />
+                      <span className="text-gray-500">{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 <div className="glass-effect p-4 rounded-lg">
-                  <p className="text-sm text-gray-400 mb-2">
-                    <span className="font-semibold text-green-400">Output:</span> {service.output}
+                  <p className="text-sm text-gray-500 mb-2">
+                    <span className="font-semibold text-green-500">Output:</span> {service.output}
                   </p>
                   {service.formerly && <p className="text-sm text-gray-500">Formerly Known As: {service.formerly}</p>}
                 </div>

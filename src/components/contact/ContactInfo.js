@@ -34,8 +34,8 @@ export default function ContactInfo() {
       className="space-y-8"
     >
       <div className="glass-effect p-8 rounded-lg">
-        <h2 className="text-3xl font-bold mb-6 gradient-text">Why Choose 3xGrowth?</h2>
-        <p className="text-gray-300 mb-6 leading-relaxed">
+        <h2 className="text-3xl font-bold mb-6 text-blue-500">Why Choose 3xGrowth?</h2>
+        <p className="text-gray-500 mb-6 leading-relaxed">
           We re not just another marketing agency. We re your growth partners, committed to delivering measurable
           results that impact your bottom line.
         </p>
@@ -49,10 +49,10 @@ export default function ContactInfo() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex items-start space-x-4"
             >
-              <div className="flex-shrink-0">{benefit.icon}</div>
+              <div className="flex-shrink-0 text-blue-500">{benefit.icon}</div>
               <div>
                 <h3 className="text-lg font-semibold text-white mb-1">{benefit.title}</h3>
-                <p className="text-gray-400">{benefit.description}</p>
+                <p className="text-gray-500">{benefit.description}</p>
               </div>
             </motion.div>
           ))}
@@ -60,24 +60,24 @@ export default function ContactInfo() {
       </div>
 
       <div className="glass-effect p-8 rounded-lg">
-        <h3 className="text-2xl font-bold mb-4 gradient-text">Ready to Get Started?</h3>
-        <p className="text-gray-300 mb-6">
+        <h3 className="text-2xl font-bold mb-4 text-blue-500">Ready to Get Started?</h3>
+        <p className="text-gray-500 mb-6">
           Book a free 30-minute consultation to discuss your B2B marketing challenges and discover how we can help you
           achieve 3x growth.
         </p>
 
         <div className="space-y-4">
           <div className="flex items-center space-x-3">
-            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-            <span className="text-gray-300">Analyze your current marketing strategy</span>
+            <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+            <span className="text-gray-500">Analyze your current marketing strategy</span>
           </div>
           <div className="flex items-center space-x-3">
-            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-            <span className="text-gray-300">Identify growth opportunities</span>
+            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            <span className="text-gray-500">Identify growth opportunities</span>
           </div>
           <div className="flex items-center space-x-3">
-            <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-            <span className="text-gray-300">Create a customized action plan</span>
+            <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+            <span className="text-gray-500">Create a customized action plan</span>
           </div>
         </div>
       </div>

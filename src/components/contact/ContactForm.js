@@ -67,7 +67,7 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-2">Name *</label>
+            <label className="block text-sm font-medium text-gray-500 mb-2">Name *</label>
             <input
               type="text"
               name="name"
@@ -80,7 +80,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-2">Email *</label>
+            <label className="block text-sm font-medium text-gray-500 mb-2">Email *</label>
             <input
               type="email"
               name="email"
@@ -95,7 +95,7 @@ export default function ContactForm() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-2">Company</label>
+            <label className="block text-sm font-medium text-gray-500 mb-2">Company</label>
             <input
               type="text"
               name="company"
@@ -107,7 +107,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-2">Phone</label>
+            <label className="block text-sm font-medium text-gray-500 mb-2">Phone</label>
             <input
               type="tel"
               name="phone"
@@ -120,7 +120,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-300 mb-2">Service Interest</label>
+          <label className="block text-sm font-medium text-gray-500 mb-2">Service Interest</label>
           <select
             name="service"
             value={formData.service}
@@ -137,7 +137,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-300 mb-2">Message *</label>
+          <label className="block text-sm font-medium text-gray-500 mb-2">Message *</label>
           <textarea
             name="message"
             value={formData.message}

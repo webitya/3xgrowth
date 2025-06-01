@@ -5,7 +5,7 @@ import { TrendingUp, Business, Speed, Group } from "@mui/icons-material"
 export default function ProjectsGrid() {
   const projects = [
     {
-      icon: <Business className="text-4xl text-blue-400" />,
+      icon: <Business className="text-4xl text-blue-500" />,
       title: "SaaS Startup Growth",
       industry: "Technology",
       challenge: "New SaaS company needed to build their first customer base and establish market presence.",
@@ -19,7 +19,7 @@ export default function ProjectsGrid() {
       timeframe: "3 months",
     },
     {
-      icon: <TrendingUp className="text-4xl text-green-400" />,
+      icon: <TrendingUp className="text-4xl text-green-500" />,
       title: "Manufacturing Scale-Up",
       industry: "Manufacturing",
       challenge: "Traditional manufacturer wanted to expand into new markets and modernize their sales approach.",
@@ -28,7 +28,7 @@ export default function ProjectsGrid() {
       timeframe: "6 months",
     },
     {
-      icon: <Speed className="text-4xl text-purple-400" />,
+      icon: <Speed className="text-4xl text-purple-500" />,
       title: "Fintech Acceleration",
       industry: "Financial Services",
       challenge: "Fintech startup needed rapid customer acquisition to meet investor milestones.",
@@ -37,7 +37,7 @@ export default function ProjectsGrid() {
       timeframe: "4 months",
     },
     {
-      icon: <Group className="text-4xl text-pink-400" />,
+      icon: <Group className="text-4xl text-pink-500" />,
       title: "Consulting Firm Expansion",
       industry: "Professional Services",
       challenge: "Mid-size consulting firm wanted to break into enterprise accounts and premium services.",
@@ -61,9 +61,9 @@ export default function ProjectsGrid() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Case Studies</span>
+            <span className="text-blue-400">Case Studies</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-500 max-w-3xl mx-auto">
             Real challenges, proven solutions, measurable results
           </p>
         </motion.div>
@@ -80,27 +80,27 @@ export default function ProjectsGrid() {
               <div className="flex items-center mb-6">
                 {project.icon}
                 <div className="ml-4">
-                  <h3 className="text-2xl font-bold text-white">{project.title}</h3>
-                  <p className="text-blue-300">{project.industry}</p>
+                  <h3 className="text-2xl font-bold text-blue-500">{project.title}</h3>
+                  <p className="text-blue-400">{project.industry}</p>
                 </div>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-300 mb-2">Challenge</h4>
-                  <p className="text-gray-400">{project.challenge}</p>
+                  <h4 className="text-lg font-semibold text-gray-400 mb-2">Challenge</h4>
+                  <p className="text-gray-500">{project.challenge}</p>
                 </div>
 
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-300 mb-2">Solution</h4>
-                  <p className="text-gray-400">{project.solution}</p>
+                  <h4 className="text-lg font-semibold text-gray-400 mb-2">Solution</h4>
+                  <p className="text-gray-500">{project.solution}</p>
                 </div>
 
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-300 mb-2">Results</h4>
+                  <h4 className="text-lg font-semibold text-gray-400 mb-2">Results</h4>
                   <ul className="space-y-2">
                     {project.results.map((result, resultIndex) => (
-                      <li key={resultIndex} className="flex items-center text-gray-400">
+                      <li key={resultIndex} className="flex items-center text-gray-500">
                         <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
                         {result}
                       </li>

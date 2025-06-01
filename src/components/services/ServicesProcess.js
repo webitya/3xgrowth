@@ -7,22 +7,22 @@ import { Search, Event, Link, Stars } from '@mui/icons-material';
 export default function ServicesProcess() {
   const steps = [
     {
-      icon: <Search className="text-4xl text-blue-400" />,
+      icon: <Search className="text-4xl text-blue-500" />,
       title: "Pinpoint",
       description: "Identify and build your ideal customer database",
     },
     {
-      icon: <Link className="text-4xl text-green-400" />,
+      icon: <Link className="text-4xl text-green-500" />,
       title: "Breakthrough",
       description: "Make first contact with qualified prospects",
     },
     {
-      icon: <Event className="text-4xl text-purple-400" />,
+      icon: <Event className="text-4xl text-purple-500" />,
       title: "Pipeline",
       description: "Convert contacts into sales appointments",
     },
     {
-      icon: <Stars className="text-4xl text-pink-400" />,
+      icon: <Stars className="text-4xl text-pink-500" />,
       title: "Influence",
       description: "Nurture and accelerate decision-making",
     },
@@ -40,7 +40,7 @@ export default function ServicesProcess() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Our Process</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-50 max-w-3xl mx-auto">
             A systematic approach to B2B marketing that delivers consistent results
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ export default function ServicesProcess() {
                   {index + 1}
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-white">{step.title}</h3>
-                <p className="text-gray-300">{step.description}</p>
+                <p className="text-gray-50">{step.description}</p>
               </div>
 
               {index < steps.length - 1 && (

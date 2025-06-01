@@ -8,10 +8,10 @@ export default function ProjectsHero() {
       <div className="max-w-7xl mx-auto text-center">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">Success Stories</span>
+            <span className="text-blue-500">Success Stories</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-4xl mx-auto">
             Discover how we ve helped 100+ companies transform their B2B marketing and achieve remarkable growth
             results.
           </p>
@@ -24,19 +24,19 @@ export default function ProjectsHero() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           <div className="glass-effect p-6 rounded-lg">
-            <Business className="text-blue-400 text-4xl mb-4 mx-auto" />
-            <h3 className="text-xl font-semibold mb-2">100+</h3>
-            <p className="text-gray-400">Companies Transformed</p>
+            <Business className="text-blue-500 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl text-zinc-500 font-semibold mb-2">100+</h3>
+            <p className="text-gray-500">Companies Transformed</p>
           </div>
           <div className="glass-effect p-6 rounded-lg">
-            <TrendingUp className="text-green-400 text-4xl mb-4 mx-auto" />
-            <h3 className="text-xl font-semibold mb-2">300%</h3>
-            <p className="text-gray-400">Average ROI Increase</p>
+            <TrendingUp className="text-green-500 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold text-zinc-500 mb-2">300%</h3>
+            <p className="text-gray-500">Average ROI Increase</p>
           </div>
           <div className="glass-effect p-6 rounded-lg">
-            <Group className="text-purple-400 text-4xl mb-4 mx-auto" />
-            <h3 className="text-xl font-semibold mb-2">8 Years</h3>
-            <p className="text-gray-400">Of Proven Experience</p>
+            <Group className="text-purple-500 text-4xl mb-4 mx-auto" />
+            <h3 className="text-xl font-semibold text-zinc-500 mb-2">8 Years</h3>
+            <p className="text-gray-500">Of Proven Experience</p>
           </div>
         </motion.div>
       </div>

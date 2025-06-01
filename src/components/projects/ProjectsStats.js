@@ -40,9 +40,9 @@ export default function ProjectsStats() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Results That Speak</span>
+            <span className="text-white">Results That Speak</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-50 max-w-3xl mx-auto">
             Numbers don t lie. Here s the impact we have made across our client portfolio.
           </p>
         </motion.div>
@@ -59,7 +59,7 @@ export default function ProjectsStats() {
               <div className="mb-4">{stat.icon}</div>
               <h3 className="text-3xl font-bold mb-2 gradient-text">{stat.number}</h3>
               <p className="text-lg font-semibold text-white mb-2">{stat.label}</p>
-              <p className="text-gray-400 text-sm">{stat.description}</p>
+              <p className="text-gray-50 text-sm">{stat.description}</p>
             </motion.div>
           ))}
         </div>

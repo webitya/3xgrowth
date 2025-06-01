@@ -294,18 +294,18 @@ export default function Footer() {
                     {
                       icon: <Email className="text-blue-500" />,
                       label: "Enterprise Email",
-                      value: "hello@3xgrowth.in",
+                      value: "contact@3xgrowth.in",
                       type: "email",
                     },
                     {
                       icon: <Phone className="text-emerald-500" />,
                       label: "Business Line",
-                      value: "+91 XXX XXX XXXX",
+                      value: "+91 6200207379",
                       type: "phone",
                     },
                     {
                       icon: <LocationOn className="text-purple-500" />,
-                      label: "Global HQ",
+                      label: "Ranchi, Jharkhand",
                       value: "India",
                       type: "location",
                     },

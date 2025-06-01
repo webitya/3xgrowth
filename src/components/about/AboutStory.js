@@ -13,7 +13,7 @@ export default function AboutStory() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Our Story</span>
+            <span className="text-purple-600">Our Story</span>
           </h2>
         </motion.div>
 
@@ -24,9 +24,9 @@ export default function AboutStory() {
             transition={{ duration: 0.8 }}
             className="glass-effect p-8 rounded-lg"
           >
-            <School className="text-5xl text-blue-400 mb-6" />
-            <h3 className="text-2xl font-bold mb-4 text-white">Sister Company of Sales Syllabus</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <School className="text-5xl text-blue-600 mb-6" />
+            <h3 className="text-2xl font-bold mb-4 text-zinc-800">Sister Company of Sales Syllabus</h3>
+            <p className="text-gray-700 leading-relaxed">
               3xGrowth Consulting is a sister company of Sales Syllabus — India s largest leadership learning platform
               for sales and marketing teams. This connection gives us unique insights into what works in B2B sales and
               marketing.
@@ -39,9 +39,9 @@ export default function AboutStory() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="glass-effect p-8 rounded-lg"
           >
-            <Business className="text-5xl text-purple-400 mb-6" />
-            <h3 className="text-2xl font-bold mb-4 text-white">8 Years of Excellence</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <Business className="text-5xl text-purple-600 mb-6" />
+            <h3 className="text-2xl font-bold mb-4 text-zinc-800">8 Years of Excellence</h3>
+            <p className="text-gray-700 leading-relaxed">
               With over 8 years of experience, we ve worked with 100+ companies to understand what works—and what
               doesn t—in B2B sales and marketing. Our deep operational understanding and strong talent network ensure
               success.
@@ -57,7 +57,7 @@ export default function AboutStory() {
         >
           <div className="glass-effect p-8 rounded-lg max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 gradient-text">Our Mission</h3>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-700 leading-relaxed">
               To help organizations reduce mistakes in marketing and sales, maximize efficiency, and get faster results.
               Our performance-based approach ensures that your sales strategy is always headed in the right direction.
             </p>
