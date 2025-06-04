@@ -410,7 +410,7 @@ export default function Footer() {
           </div>
 
           {/* Corporate tagline */}
-         <div className="text-center border-t border-slate-800">
+         {/* <div className="text-center border-t border-slate-800">
 
 
   <p className="text-xs text-slate-600 mt-2">
@@ -424,7 +424,7 @@ export default function Footer() {
       Webitya
     </a>
   </p>
-</div>
+</div> */}
 
         </motion.div>
       </div>
