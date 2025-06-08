@@ -54,7 +54,7 @@ export default function ProjectsGrid() {
   return (
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -66,11 +66,11 @@ export default function ProjectsGrid() {
           <p className="text-xl text-gray-500 max-w-3xl mx-auto">
             Real challenges, proven solutions, measurable results
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +114,7 @@ export default function ProjectsGrid() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

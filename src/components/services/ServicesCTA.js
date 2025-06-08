@@ -7,7 +7,7 @@ export default function ServicesCTA() {
   return (
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <RocketLaunch className="text-6xl text-blue-500 mb-6 mx-auto" />
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-green-400">Ready to Transform Your B2B Marketing?</span>
@@ -43,7 +43,7 @@ export default function ServicesCTA() {
               <p className="text-gray-500">See impact within 30 days</p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

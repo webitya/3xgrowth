@@ -31,7 +31,7 @@ export default function ServicesProcess() {
   return (
     <section className="py-20 px-4 bg-gray-900/50">
       <div className="max-w-7xl mx-auto">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -43,11 +43,11 @@ export default function ServicesProcess() {
           <p className="text-xl text-gray-50 max-w-3xl mx-auto">
             A systematic approach to B2B marketing that delivers consistent results
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ export default function ServicesProcess() {
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400"></div>
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

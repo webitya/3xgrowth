@@ -10,7 +10,7 @@ export default function ServicesPage() {
     <div className="relative">
       <ThreeBackground />
       <ServicesHero />
-      <ServicesList />
+      {/* <ServicesList /> */}
         <HomepageServices />
       <ServicesProcess />
       <ServicesCTA />

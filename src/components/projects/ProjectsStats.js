@@ -33,7 +33,7 @@ export default function ProjectsStats() {
   return (
     <section className="py-20 px-4 bg-gray-900/50">
       <div className="max-w-7xl mx-auto">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -45,11 +45,11 @@ export default function ProjectsStats() {
           <p className="text-xl text-gray-50 max-w-3xl mx-auto">
             Numbers don t lie. Here s the impact we have made across our client portfolio.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export default function ProjectsStats() {
               <h3 className="text-3xl font-bold mb-2 gradient-text">{stat.number}</h3>
               <p className="text-lg font-semibold text-white mb-2">{stat.label}</p>
               <p className="text-gray-50 text-sm">{stat.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -104,7 +104,7 @@ export default function HomepageServices() {
       {/* Corporate data streams */}
       <div className="absolute inset-0">
         {[...Array(12)].map((_, i) => (
-          <motion.div
+          <div
             key={i}
             className="absolute w-px bg-gradient-to-b from-transparent via-blue-400/20 to-transparent"
             style={{
@@ -129,7 +129,7 @@ export default function HomepageServices() {
     
 
         <NeuralInterface className="mb-16 py-10">
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -158,13 +158,13 @@ export default function HomepageServices() {
                 enterprise experience and 100+ successful client transformations.
               </p>
             </div>
-          </motion.div>
+          </div>
         </NeuralInterface>
 
         {/* Corporate services grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -245,7 +245,7 @@ export default function HomepageServices() {
                           </span>
                         </div>
                         <div className="w-full bg-slate-800 rounded-full h-1">
-                          <motion.div
+                          <div
                             className="h-1 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500"
                             initial={{ width: 0 }}
                             whileInView={{ width: `${Math.min(value, 100)}%` }}
@@ -266,12 +266,12 @@ export default function HomepageServices() {
                   </div>
                 </div>
               </HolographicPanel>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Corporate action center */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -327,7 +327,7 @@ export default function HomepageServices() {
                   { label: "Years Experience", value: "8+", icon: "⭐" },
                   { label: "Growth Results", value: "3x", icon: "📈" },
                 ].map((metric, index) => (
-                  <motion.div
+                  <div
                     key={index}
                     className="text-center bg-white rounded-lg p-4 border border-blue-400/20"
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -337,7 +337,7 @@ export default function HomepageServices() {
                     <div className="text-2xl mb-2">{metric.icon}</div>
                     <div className="text-2xl font-bold text-emerald-500 mb-1">{metric.value}</div>
                     <div className="text-xs text-slate-600">{metric.label}</div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 
@@ -353,7 +353,7 @@ export default function HomepageServices() {
               </div>
             </div>
           </HolographicPanel>
-        </motion.div>
+        </div>
       </div>
 
       <style jsx>{`

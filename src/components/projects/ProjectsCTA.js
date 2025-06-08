@@ -7,7 +7,7 @@ export default function ProjectsCTA() {
   return (
     <section className="py-20 px-4 bg-gradient-to-r from-blue-900/50 to-purple-900/50">
       <div className="max-w-4xl mx-auto text-center">
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <TrendingUp className="text-6xl text-green-400 mb-6 mx-auto" />
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Your Success Story Starts Here</span>
@@ -37,7 +37,7 @@ export default function ProjectsCTA() {
             <p className="text-lg font-semibold text-white">Ready to 3x Your Growth?</p>
             <p className="text-white">Let s discuss your specific challenges and goals</p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
