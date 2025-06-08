@@ -174,7 +174,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-2">
             {navItems.map((item, index) => (
-              <motion.div
+              <div
                 key={item.name}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -224,7 +224,7 @@ export default function Navbar() {
                     />
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
