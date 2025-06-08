@@ -50,17 +50,6 @@ export default function ThreeBackground() {
     );
     scene.add(particlesMesh);
 
-    // Create geometric shapes
-    const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-    const material = new THREE.MeshBasicMaterial({
-      color: 0x1e3a8a,
-      wireframe: true,
-      transparent: true,
-      opacity: 0.15,
-    });
-    const torus = new THREE.Mesh(geometry, material);
-    scene.add(torus);
-
     camera.position.z = 30;
 
     // Animation
@@ -69,9 +58,6 @@ export default function ThreeBackground() {
 
       particlesMesh.rotation.x += 0.001;
       particlesMesh.rotation.y += 0.001;
-
-      torus.rotation.x += 0.01;
-      torus.rotation.y += 0.005;
 
       renderer.render(scene, camera);
     };
