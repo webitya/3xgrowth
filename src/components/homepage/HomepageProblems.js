@@ -59,7 +59,7 @@ export default function HomepageProblems() {
       {/* Corporate data streams */}
       <div className="absolute inset-0">
         {[...Array(8)].map((_, i) => (
-          <motion.div
+          <div
             key={i}
             className="absolute w-px bg-gradient-to-b from-transparent via-red-400/20 to-transparent"
             style={{
@@ -84,7 +84,7 @@ export default function HomepageProblems() {
      
 
         <NeuralInterface className="mb-16 py-8">
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -114,13 +114,13 @@ export default function HomepageProblems() {
                 <span className="text-emerald-300 font-semibold">accountability, accuracy, and action</span>.
               </p>
             </div>
-          </motion.div>
+          </div>
         </NeuralInterface>
 
         {/* Corporate challenge analysis grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {businessChallenges.map((challenge, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -219,12 +219,12 @@ export default function HomepageProblems() {
                   </div>
                 </div>
               </HolographicPanel>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Corporate solution preview */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -285,7 +285,7 @@ export default function HomepageProblems() {
               </div>
             </div>
           </HolographicPanel>
-        </motion.div>
+        </div>
       </div>
 
       <style jsx>{`

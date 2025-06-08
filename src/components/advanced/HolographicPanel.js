@@ -44,7 +44,7 @@ export default function HolographicPanel({ title, children, className = "", vari
   }, [])
 
   return (
-    <motion.div
+    <div
       className={`
         relative backdrop-blur-xl border-2 rounded-xl overflow-hidden
         ${currentVariant.border} ${className}
@@ -193,6 +193,6 @@ export default function HolographicPanel({ title, children, className = "", vari
           />
         ))}
       </div>
-    </motion.div>
+    </div>
   )
 }

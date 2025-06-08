@@ -13,7 +13,7 @@ export default function HomePage() {
       <HomepageHero />
       <HomepageProblems />
       <HomepageDifferentiators />
-      <HomepageServices />
+    
       <HomepageCTA />
     </div>
   )

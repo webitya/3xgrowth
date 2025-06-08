@@ -97,7 +97,7 @@ export default function Footer() {
       {/* Corporate data streams */}
       <div className="absolute inset-0">
         {[...Array(12)].map((_, i) => (
-          <motion.div
+          <div
             key={i}
             className="absolute w-px bg-gradient-to-b from-transparent via-blue-400/20 to-transparent"
             style={{
@@ -131,13 +131,13 @@ export default function Footer() {
                   {/* Advanced corporate logo */}
                   <div className="flex items-center space-x-3">
                     <div className="relative">
-                      <motion.div
+                      <div
                         className="w-12 h-12 border-2 border-blue-400/30 rounded-lg flex items-center justify-center bg-white"
                         animate={{ rotate: 360 }}
                         transition={{ duration: 30, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                       >
                         <TrendingUp className="text-blue-500 text-2xl" />
-                      </motion.div>
+                      </div>
                       <div className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full flex items-center justify-center">
                         <CheckCircle className="text-slate-900 text-xs" />
                       </div>
@@ -157,7 +157,7 @@ export default function Footer() {
                   {/* Corporate achievements */}
                   <div className="grid grid-cols-2 gap-3 pt-4 border-t border-slate-700">
                     {achievements.map((achievement, index) => (
-                      <motion.div
+                      <div
                         key={index}
                         className="text-center bg-white rounded-lg p-3 border border-slate-700/50"
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -167,7 +167,7 @@ export default function Footer() {
                         <div className="flex justify-center mb-1">{achievement.icon}</div>
                         <div className="text-sm font-bold text-slate-500">{achievement.metric}</div>
                         <div className="text-xs text-slate-500">{achievement.label}</div>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
 
@@ -207,7 +207,7 @@ export default function Footer() {
               <HolographicPanel title="ENTERPRISE SERVICES" variant="secondary" level={4}>
                 <div className="space-y-4">
                   {services.map((service, index) => (
-                    <motion.div
+                    <motion
                       key={service.name}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -239,7 +239,7 @@ export default function Footer() {
                           <div className="text-xs text-slate-600">{service.description}</div>
                         </div>
                       </Link>
-                    </motion.div>
+                    </motion>
                   ))}
                 </div>
               </HolographicPanel>
@@ -250,7 +250,7 @@ export default function Footer() {
               <HolographicPanel title="COMPANY NAVIGATION" variant="accent" level={3}>
                 <div className="space-y-4">
                   {companyLinks.map((link, index) => (
-                    <motion.div
+                    <motion
                       key={link.name}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -279,7 +279,7 @@ export default function Footer() {
                           <div className="text-xs text-slate-500">{link.description}</div>
                         </div>
                       </Link>
-                    </motion.div>
+                    </motion>
                   ))}
                 </div>
               </HolographicPanel>
@@ -310,7 +310,7 @@ export default function Footer() {
                       type: "location",
                     },
                   ].map((contact, index) => (
-                    <motion.div
+                    <motion
                       key={index}
                       className="flex items-center space-x-3 p-3 bg-white rounded-lg border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300"
                       initial={{ opacity: 0, y: 10 }}
@@ -322,7 +322,7 @@ export default function Footer() {
                         <div className="text-xs text-slate-500">{contact.label}</div>
                         <div className="text-sm text-slate-500 font-medium">{contact.value}</div>
                       </div>
-                    </motion.div>
+                    </motion>
                   ))}
                 </div>
               </HolographicPanel>
@@ -331,7 +331,7 @@ export default function Footer() {
               <HolographicPanel title="INDUSTRY SUCCESS" variant="accent" level={3}>
                 <div className="space-y-3">
                   {industries.map((industry, index) => (
-                    <motion.div
+                    <motion
                       key={index}
                       className="flex items-center justify-between p-2 bg-white rounded border border-slate-700/30"
                       initial={{ opacity: 0, x: 20 }}
@@ -340,7 +340,7 @@ export default function Footer() {
                     >
                       <span className="text-xs text-slate-500">{industry.name}</span>
                       <span className="text-xs font-bold text-emerald-500">{industry.growth}</span>
-                    </motion.div>
+                    </motion>
                   ))}
                 </div>
               </HolographicPanel>
@@ -352,7 +352,7 @@ export default function Footer() {
 
 
         {/* Corporate footer bottom */}
-        <motion.div
+        <motion
           className="border-t border-slate-700 pt-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -426,7 +426,7 @@ export default function Footer() {
   </p>
 </div> */}
 
-        </motion.div>
+        </motion>
       </div>
     </footer>
   )

@@ -31,7 +31,7 @@ export default function HomepageCTA() {
       {/* Corporate success indicators */}
       <div className="absolute inset-0">
         {[...Array(15)].map((_, i) => (
-          <motion.div
+          <div
             key={i}
             className="absolute w-px bg-gradient-to-b from-transparent via-emerald-400/30 to-transparent"
             style={{
@@ -56,7 +56,7 @@ export default function HomepageCTA() {
   
 
         <NeuralInterface className="mb-12">
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+          <div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             {/* Corporate CTA header */}
        
 
@@ -83,102 +83,20 @@ export default function HomepageCTA() {
                 by 8+ years of enterprise success.
               </p>
             </div>
-          </motion.div>
+          </div>
         </NeuralInterface>
 
         {/* Corporate action matrix */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Primary deployment */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <HolographicPanel title="PRIMARY DEPLOYMENT" variant="primary" level={5}>
-              <div className="space-y-6">
-                <div className="text-center">
-                  <Business className="text-blue-4600 text-4xl mb-4" />
-                  <h3 className="text-2xl font-bold text-slate-600 mb-3">Start Talking to Your Prospects Today</h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    Begin your enterprise growth journey with our proven B2B marketing strategies and see measurable
-                    results within weeks of implementation.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <QuantumButton variant="primary" size="large" className="w-full">
-                    <Link href="/contact" className="block">
-                      <div className="flex items-center justify-center space-x-2">
-                        <RocketLaunch className="text-lg text-blue-600" />
-                        <span className="text-zinc-600">Start Your Growth Journey</span>
-                      </div>
-                    </Link>
-                  </QuantumButton>
-
-                  <div className="grid grid-cols-2 gap-4 text-center">
-                    <div className="bg-white rounded-lg p-3 border border-emerald-400/20">
-                      <div className="text-lg font-bold text-emerald-600">Free</div>
-                      <div className="text-xs text-slate-600">Enterprise Consultation</div>
-                    </div>
-                    <div className="bg-white rounded-lg p-3 border border-blue-400/20">
-                      <div className="text-lg font-bold text-blue-600">48h</div>
-                      <div className="text-xs text-slate-600">Implementation Start</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </HolographicPanel>
-          </motion.div>
-
-          {/* Service exploration */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <HolographicPanel title="SOLUTION EXPLORATION" variant="secondary" level={4}>
-              <div className="space-y-6">
-                <div className="text-center">
-                  <Analytics className="text-purple-600 text-4xl mb-4" />
-                  <h3 className="text-2xl font-bold text-slate-600 mb-3">Discover Enterprise Solutions</h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    Explore our comprehensive service portfolio and see how we can help transform your business with
-                    proven enterprise methodologies.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <QuantumButton variant="secondary" size="large" className="w-full">
-                    <Link href="/services" className="block">
-                      <div className="flex items-center justify-center space-x-2">
-                        <Analytics className="text-lg text-blue-500" />
-                        <span className="text-zinc-600">View Enterprise Services</span>
-                      </div>
-                    </Link>
-                  </QuantumButton>
-
-                  <QuantumButton variant="accent" size="medium" className="w-full">
-                    <Link href="/projects" className="block">
-                      <div className="flex items-center justify-center space-x-2">
-                        <TrendingUp className="text-lg text-purple-500" />
-                        <span className="text-zinc-600">See Success Stories</span>
-                      </div>
-                    </Link>
-                  </QuantumButton>
-                </div>
-              </div>
-            </HolographicPanel>
-          </motion.div>
-        </div>
+  
 
         {/* Corporate performance dashboard */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <HolographicPanel
-            title="ENTERPRISE PERFORMANCE MATRIX"
+            title="WHY HIRE US ?"
             variant="accent"
             level={5}
             className="max-w-5xl mx-auto"
@@ -214,7 +132,7 @@ export default function HomepageCTA() {
                   badge: "GUARANTEED",
                 },
               ].map((item, index) => (
-                <motion.div
+                <div
                   key={index}
                   className="text-center space-y-3 bg-white rounded-lg p-6 border border-slate-700/50"
                   initial={{ opacity: 0, y: 20 }}
@@ -230,7 +148,7 @@ export default function HomepageCTA() {
                   <div className="text-2xl font-bold text-slate-600">{item.metric}</div>
                   <div className="text-sm font-medium text-slate-500">{item.label}</div>
                   <div className="text-xs text-slate-500">{item.description}</div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
@@ -246,7 +164,7 @@ export default function HomepageCTA() {
               </p>
             </div>
           </HolographicPanel>
-        </motion.div>
+        </div>
       </div>
 
       <style jsx>{`

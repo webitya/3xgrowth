@@ -13,7 +13,7 @@ export default function HomepageDifferentiators() {
       description:
         "We don't just offer support—we take complete ownership. From strategic planning to tactical execution, we deliver measurably better results than your in-house marketing team.",
       capabilities: [
-        "Performance-Based Contracts",
+        // "Performance-Based Contracts",
         "Guaranteed Output Delivery",
         "Real-Time ROI Tracking",
         "Executive Reporting Dashboard",
@@ -79,7 +79,7 @@ export default function HomepageDifferentiators() {
       {/* Corporate data visualization */}
       <div className="absolute inset-0 py-1">
         {[...Array(10)].map((_, i) => (
-          <motion.div
+          <div
             key={i}
             className="absolute w-px bg-gradient-to-b from-transparent via-blue-400/20 to-transparent"
             style={{
@@ -105,7 +105,7 @@ export default function HomepageDifferentiators() {
        
 
         <NeuralInterface className="mb-16">
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -135,13 +135,13 @@ export default function HomepageDifferentiators() {
                 provide unmatched value for enterprise clients.
               </p>
             </div>
-          </motion.div>
+          </div>
         </NeuralInterface>
 
         {/* Corporate differentiators grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {differentiators.map((item, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -158,14 +158,14 @@ export default function HomepageDifferentiators() {
                   <div className="flex items-start justify-between">
                     <div className="flex items-center space-x-3">
                       <div className="relative">
-                        <motion.div
+                        <motion
                           className="transform transition-transform duration-300 hover:scale-110"
                           style={{
                             animation: `corporateFloat 6s ease-in-out infinite ${index * 0.5}s`,
                           }}
                         >
                           {item.icon}
-                        </motion.div>
+                        </motion>
                         <div className="absolute -top-2 -right-2 w-6 h-6 bg-emerald-400 rounded-full flex items-center justify-center">
                           <Security className="text-slate-900 text-xs" />
                         </div>
@@ -235,12 +235,12 @@ export default function HomepageDifferentiators() {
                   </div>
                 </div>
               </HolographicPanel>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Corporate comparison matrix */}
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -313,7 +313,7 @@ export default function HomepageDifferentiators() {
               </div>
             </div>
           </HolographicPanel>
-        </motion.div>
+        </div>
       </div>
 
       <style jsx>{`
