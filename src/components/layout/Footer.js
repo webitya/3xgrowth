@@ -305,7 +305,7 @@ export default function Footer() {
                     },
                     {
                       icon: <LocationOn className="text-purple-500" />,
-                      label: "Ranchi, Jharkhand",
+                      label: "D Block, Jayshree Green City, Argora, Ranchi, jharkhand ",
                       value: "India",
                       type: "location",
                     },

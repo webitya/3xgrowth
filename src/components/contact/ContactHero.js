@@ -35,7 +35,7 @@ export default function ContactHero() {
           <div className="glass-effect p-6 rounded-lg">
             <LocationOn className="text-purple-500 text-3xl mb-4 mx-auto" />
             <h3 className="text-lg font-semibold text-zinc-500 mb-2">Location</h3>
-            <p className="text-gray-500">Ranchi, Jharkhand India</p>
+            <p className="text-gray-500">D Block, Jayshree Green City, Argora, Ranchi, Jharkhand, India</p>
           </div>
         </motion.div>
       </div>
