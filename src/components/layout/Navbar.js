@@ -40,7 +40,7 @@ export default function Navbar() {
   ]
 
   return (
-    <motion.nav
+    <nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-700 ${
@@ -345,6 +345,6 @@ export default function Navbar() {
           }
         }
       `}</style>
-    </motion.nav>
+    </nav>
   )
 }
