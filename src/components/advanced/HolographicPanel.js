@@ -62,11 +62,7 @@ export default function HolographicPanel({ title, children, className = "", vari
       transition={{ duration: 0.8 }}
       onMouseEnter={() => setIsActive(true)}
       onMouseLeave={() => setIsActive(false)}
-      whileHover={{
-        scale: 1.01,
-        rotateY: 1,
-        transition: { duration: 0.3 },
-      }}
+     
     >
       {/* Advanced holographic grid */}
       <div
@@ -123,7 +119,7 @@ export default function HolographicPanel({ title, children, className = "", vari
       ))}
 
       {/* Scanning beam */}
-      <motion.div
+      {/* <motion.div
         className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-400/60 to-transparent"
         animate={{ y: [0, "100vh"] }}
         transition={{
@@ -131,7 +127,7 @@ export default function HolographicPanel({ title, children, className = "", vari
           repeat: Number.POSITIVE_INFINITY,
           ease: "linear",
         }}
-      />
+      /> */}
 
       {/* Header section */}
       {title && (

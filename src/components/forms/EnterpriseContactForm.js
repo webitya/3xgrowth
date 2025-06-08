@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import {
   Send,
   Business,
@@ -64,7 +63,6 @@ export default function EnterpriseContactForm() {
   return (
     <HolographicPanel
       title="GET FREE STRATEGY SESSION"
-      
       level={5}
       className="w-full max-w-sm !text-blue-800"
     >
@@ -109,7 +107,7 @@ export default function EnterpriseContactForm() {
                 value={formData.company}
                 onChange={handleChange}
                 required
-                className="w-full px-2.5 py-1.5 bg-white border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white text-xs placeholder-slate-500 transition-all duration-300"
+                className="w-full px-2.5 py-1.5 bg-white border border-slate-600 rounded-lg focus:ring-2 focus:border-transparent text-black text-xs placeholder-slate-500"
                 placeholder="Company"
               />
             </div>
@@ -126,7 +124,7 @@ export default function EnterpriseContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-2.5 py-1.5 bg-white border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white text-xs placeholder-slate-500 transition-all duration-300"
+                className="w-full px-2.5 py-1.5 bg-white border border-slate-600 rounded-lg focus:ring-2 focus:border-transparent text-black text-xs placeholder-slate-500"
                 placeholder="email@company.com"
               />
             </div>
@@ -140,7 +138,7 @@ export default function EnterpriseContactForm() {
               value={formData.message}
               onChange={handleChange}
               rows={2}
-              className="w-full px-2.5 py-1.5 bg-white border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white text-xs placeholder-slate-500 transition-all duration-300 resize-none"
+              className="w-full px-2.5 py-1.5 bg-white border border-slate-600 rounded-lg focus:ring-2 focus:border-transparent text-black text-xs placeholder-slate-500 resize-none"
               placeholder="Lead generation, sales conversion..."
             />
           </div>
@@ -155,31 +153,23 @@ export default function EnterpriseContactForm() {
 
           {/* Status Messages */}
           {submitStatus === "success" && (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-start space-x-2 p-2 bg-emerald-900/20 border border-emerald-400/30 rounded-lg"
-            >
+            <div className="flex items-start space-x-2 p-2 bg-emerald-900/20 border border-emerald-400/30 rounded-lg">
               <CheckCircle className="text-emerald-400 text-xs mt-0.5" />
               <div>
                 <p className="text-emerald-400 text-xs font-medium">Success! We will be in touch soon.</p>
                 <p className="text-emerald-300 text-xs">Expect a call within 24 hours.</p>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {submitStatus === "error" && (
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-start space-x-2 p-2 bg-red-900/20 border border-red-400/30 rounded-lg"
-            >
+            <div className="flex items-start space-x-2 p-2 bg-red-900/20 border border-red-400/30 rounded-lg">
               <Error className="text-red-400 text-xs mt-0.5" />
               <div>
                 <p className="text-red-400 text-xs font-medium">Something went wrong</p>
                 <p className="text-red-300 text-xs">Please try again or email us.</p>
               </div>
-            </motion.div>
+            </div>
           )}
         </form>
 
