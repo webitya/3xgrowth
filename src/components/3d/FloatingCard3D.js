@@ -52,7 +52,7 @@ export default function FloatingCard3D({ children, className = "", delay = 0 }) 
   }, [])
 
   return (
-    <motion.div
+    <div
       ref={cardRef}
       initial={{ opacity: 0, y: 50, rotateX: -15 }}
       whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
@@ -81,6 +81,6 @@ export default function FloatingCard3D({ children, className = "", delay = 0 }) 
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div className="relative z-10">{children}</div>
       </div>
-    </motion.div>
+    </div>
   )
 }

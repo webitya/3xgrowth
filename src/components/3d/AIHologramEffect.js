@@ -114,7 +114,7 @@ export default function AIHologramEffect({ children, className = "" }) {
   return (
     <div ref={containerRef} className={`relative ${className}`}>
       <div ref={mountRef} className="absolute inset-0 pointer-events-none opacity-30" />
-      <motion.div
+      <div
         className="relative z-10"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -122,7 +122,7 @@ export default function AIHologramEffect({ children, className = "" }) {
         whileHover={{ scale: 1.02 }}
       >
         {children}
-      </motion.div>
+      </div>
     </div>
   )
 }
